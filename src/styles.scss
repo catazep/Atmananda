@@ -1,1 +1,510 @@
-/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+:root {
+  --primary: #cc5500;
+  --secondary: #ffefe4;
+  --dark-brown: #2d1810;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  // font-family: "Poppins", sans-serif;
+  font-family: "Libre Baskerville", serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--color-pale-pink);
+  // width: fit-content;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: "Cormorant Garamond", serif;
+  font-family: "Libre Baskerville", serif;
+  color: var(--color-saffron);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  z-index: 10;
+}
+
+/* Navigation */
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 3rem;
+  opacity: 0.9;
+}
+
+.nav-link {
+  color: #cc5500;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #b54a00;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Hero Section */
+// .hero {
+//   min-height: 100vh;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: white;
+//   background-color: var(--dark-brown);
+//   text-align: center;
+//   padding: 4rem 0;
+// }
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: white;
+  background-color: var(--dark-brown);
+  text-align: center;
+  padding: 11rem 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/img/bucharest.png");
+  background-size: cover;
+  // background-position: center;
+  // opacity: 0.6;
+}
+
+.hero h1 {
+  // font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  // font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.hero a {
+  z-index: 1000;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.button:hover {
+  background-color: #b54a00;
+}
+
+/* Program Section */
+.program {
+  background-color: var(--secondary);
+  padding: 3rem 0;
+}
+
+.program h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.program-cards {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.program-info {
+  max-width: 48rem;
+  margin: 3rem auto 0;
+  padding: 0 24px 48px;
+}
+
+.program-info p {
+  font-size: 1.1rem;
+}
+
+.program-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  margin-top: 60px;
+}
+
+/* Video Section */
+.video-section img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.carousel {
+  position: relative;
+  margin: 4rem 0;
+}
+
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  padding: 0 1rem;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
+.video-card h3 {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  font-size: 1.5rem;
+}
+
+.carousel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+/* About Section */
+.about {
+  background-color: var(--secondary);
+  padding: 1.8rem 0;
+}
+
+.about h2 {
+  // font-size: clamp(2.6rem, 6vw, 5rem);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  margin: 5px 0 30px;
+  text-align: center;
+}
+
+.about-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-content .cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.about-content .card {
+  flex: 1;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Register Section */
+.register {
+  max-width: 48rem;
+  margin: 2rem auto 0;
+  padding: 0 24px;
+}
+
+.register p {
+  font-size: 1.1rem;
+}
+
+.register .love {
+  text-align: center;
+}
+
+.register .invitation {
+  margin: 16px 0;
+  font-size: clamp(14px, 1vw, 24px);
+  text-align: center;
+}
+
+.register h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  margin-top: 30px;
+}
+
+.close-form {
+  border-radius: 12px 12px 0 0;
+}
+
+.swami-website {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.swami-website span {
+  text-align: center;
+  display: inline-block;
+  // font-family: "Cormorant Garamond", serif;
+  font-family: "Libre Baskerville", serif;
+}
+
+.website-link {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  display: inline-block;
+  // font-family: "Cormorant Garamond", serif;
+  font-family: "Libre Baskerville", serif;
+}
+
+.form-container {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.organizer {
+  // font-family: "Cormorant Garamond", serif;
+  font-family: "Libre Baskerville", serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 900;
+}
+
+.organizer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Map Section */
+.map {
+  background-color: var(--secondary);
+  padding: 2rem 0;
+  display: flex;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+
+.map .title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.quote {
+  text-align: center;
+  padding: 64px 24px 0;
+}
+
+.quote h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.2s;
+}
+
+.social-links a:hover .icon {
+  color: white;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .carousel-slide {
+    flex: 0 0 33.333%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero-overlay {
+    background-size: cover;
+  }
+}
+
+// @media (min-width: 640px) {
+//   .hero-overlay {
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 7rem 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

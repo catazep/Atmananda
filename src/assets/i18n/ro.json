@@ -1,0 +1,93 @@
+{
+  "MENU_ITEMS": {
+    "HOME": "Acasă",
+    "SCHEDULE": "Program",
+    "PRESENTATION": "Prezentare",
+    "ABOUT": "Despre",
+    "REGISTER": "Înregistrare",
+    "LOCATION": "Locație"
+  },
+  "TITLE": {
+    "LINE_1": "Învățături Advaita",
+    "LINE_2": "Calea Non-Duală a Revelării Sinelui",
+    "LINE_3": "cu",
+    "LINE_4": "Swami Atmananda",
+    "TIME": "București, 13–15 Iunie 2025",
+    "PLACE": " ",
+    "REGISTER_NOW": "Înregistrați-vă aici"
+  },
+  "SCHEDULE": {
+    "TITLE": "PROGRAM SATSANG INTENSIV",
+    "FRIDAY": {
+      "TITLE": "Vineri 13 Iunie",
+      "LINE_1": "17:30 Primire",
+      "LINE_2": "18:00 Satsang",
+      "LINE_3": "20:00 Sfârșitul Satsangului"
+    },
+    "SATURDAY": {
+      "TITLE": "Sâmbătă 14 Iunie",
+      "LINE_1": "10:00 Primire",
+      "LINE_2": "10:30 Satsang",
+      "LINE_3": "12:30 Pauză de prânz",
+      "LINE_4": "15:00 Satsang",
+      "LINE_5": "17:00 Sfârșitul Satsangului"
+    },
+    "SUNDAY": {
+      "TITLE": "Duminică 15 Iunie",
+      "LINE_1": "10:00 Primire",
+      "LINE_2": "10:30 Satsang",
+      "LINE_3": "12:30 Pauză de prânz",
+      "LINE_4": "15:00 Satsang",
+      "LINE_5": "17:00 Sfârșitul Satsangului"
+    }
+  },
+  "PRESENTATION": {
+    "TITLE": "Prezentare",
+    "CONTENT": {
+      "P1": "Swami Atmananda ne oferă ocazia de a aprofunda tema Trezirii Spirituale și a Realizării Sinelui, bazată pe tradiția Advaita Vedanta.",
+      "P2": "Trezirea este Prezența Pură. Nu este nici o experiență, nici o stare, ci pur și simplu Recunoașterea spontană și imediată a adevăratei noastre Naturi, a Sinelui.",
+      "P3": "Nu există „o persoană trezită”, ci doar pură prezență a Sinelui..."
+    },
+    "TRANSLATION": {
+      "TITLE": "Traducere simultană",
+      "DESCRIPTION": "Toate cele 3 zile ale Satsangului Intensiv vor fi susținute în limba engleză, cu traducere simultană în limba română. Informații suplimentare pe această temă vă vor fi furnizate prin e-mail după înregistrarea la eveniment."
+    }
+  },
+  "QUOTE": {
+    "TEXT": "Tu ești Adevărul, Sinele, Conștiința atemporală",
+    "AUTHOR": "- Swami Atmananda Udasin -"
+  },
+  "ABOUT": {
+    "TITLE": "Despre Swami Atmananda",
+    "CONTENT": {
+      "P1": "Swami Atmananda Udasin este călugărul principal sub ghidarea caruia activeaza comunitatea ashram-ului Ajatananda Ashram din Rishikesh, India – un ashram monahal interreligios dedicat Unității Adevărului, care este menit să sprijine căutătorii spirituali din toate tradițiile religioase.",
+      "P2": "Swami Atmananda face parte din tradiția Advaita Vedanta și predă Calea Directă a Non-Dualității, oferind regulat satsanguri și retreaturi atât în India, cât și în afara granițelor acesteia.",
+      "P3": "Înainte de a îmbrățișa viața monahală, Swami Atmananda a activat ca lector universitar. Ulterior, a petrecut un deceniu în solitudine, mai întâi într-un hermitagiu din apropierea Ierusalimului și apoi în nordul Indiei, dedicându-se unei practici spirituale profunde. Spre sfârșitul acestei perioade de retragere, a adoptat Sanatana Dharma și, în 2001, a primit inițierea în sannyasa (renunțarea monahală) din partea iubitului său Maestru spiritual, H.H. Sri Chandra Swami Udasin. Învățăturile sale continuă să inspire căutători din întreaga lume, ghidându-i pe aceștia către auto-realizare și pace interioară"
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Contribuție pentru realizarea evenimentului",
+    "DESCRIPTION": "Acest eveniment este oferit în mod gratuit, iar contribuția ta este destinată exclusiv susținerii organizării și acoperirii costurilor logistice. Nu este o taxă pentru participare sau pentru învățătura primită, ci un mod de a sprijini desfășurarea acestui eveniment.",
+    "AMOUNT": "Contribuție 300 Ron",
+    "FORM": {
+      "TITLE": "Înregistrează-te pentru eveniment",
+      "BUTTON_OPEN": "Înregistrare",
+      "BUTTON_CLOSE": "Înnchide formularul",
+      "INVITATION": "Alătură-te pentru întâlnirea specială cu Swami Atmananda"
+    },
+    "SUPPORT": {
+      "TITLE": "Învățătură",
+      "DESCRIPTION": "Toate programele organizate de Ashramul din India și Europa sunt oferite gratuit. Ajatananda Ashram este o organizație non-profit și depinde în totalitate de donații pentru a acoperi cheltuielile zilnice. Dacă simți inspirația de a sprijini Ashramul și de a contribui la promovarea activităților sale în domeniul învățăturilor non-duale și al dialogului interreligios, ești binevenit să o faci prin Cutia de Donații din timpul retragerii sau online.",
+      "VISIT_ASHRAM": "Vizitează Ajatananda Ashram",
+      "LOVE": "Așteptăm cu drag să te întâmpinăm la eveniment!"
+    }
+  },
+  "LOCATION": {
+    "INFO": "Palatul Universul, Corp A, Str. Ion Brezoianu 23-25, Etaj 5, București (în apropiere de Parcul Cișmigiu)"
+  },
+  "FOOTER": {
+    "ORGANIZER_1": "Organizat de Centrul de Terapii, Meditație și Yoga",
+    "ORGANIZER_2": "SAT CHIT ANANDA ASHRAM URBAN",
+    "COPYRIGHT": "© 2025 Toate drepturile rezervate"
+  }
+}

@@ -1,0 +1,154 @@
+button.open-registration {
+  border-radius: 12px 12px 0 0;
+}
+
+.flags-container {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.flag {
+  width: 32px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #007bff;
+  }
+
+  &.active {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+}
+
+.side-social-links {
+  height: 130px;
+  width: 46px;
+  position: fixed;
+  top: 100px;
+  right: 0px;
+  border-radius: 24px 0 0 24px;
+  background-color: var(--primary);
+  opacity: 0.8;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    height: 32px;
+    width: 32px;
+
+    mat-icon {
+      height: 32px;
+      width: 32px;
+      background: white;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &.facebook {
+        color: #1877f2;
+      }
+
+      &.youtube {
+        color: #ff0000;
+      }
+
+      &.yin-yang {
+        color: black;
+      }
+    }
+  }
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 1px 1px 2px black, 0 0 1px black;
+  // margin-bottom: 36px;
+  // justify-content: space-around;
+  gap: 7%;
+  height: 70%;
+  align-items: center;
+
+  .main-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .large-font {
+    font-size: 36px;
+  }
+  .small-font {
+    font-size: 24px;
+  }
+
+  @media (min-width: 640px) and (max-width: 1239px) {
+    .large-font {
+      font-size: 42px;
+    }
+  }
+
+  @media (min-width: 1240px) {
+    .large-font {
+      font-size: clamp(2.5rem, 3.5vw, 5rem);
+    }
+    .small-font {
+      font-size: clamp(1rem, 1.7vw, 5rem);
+    }
+  }
+}
+
+footer {
+  background-color: var(--dark-brown);
+  color: var(--text-light);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .footer-conaitner {
+    max-width: 340px;
+
+    ul {
+      list-style: none;
+      text-align: left;
+    }
+  }
+}
+
+.register-button {
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  border-radius: 26px;
+  padding: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: 260px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media (min-width: 640px) {
+  .main-page {
+    height: 100%;
+  }
+}

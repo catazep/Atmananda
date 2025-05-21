@@ -1,0 +1,94 @@
+{
+  "MENU_ITEMS": {
+    "HOME": "Home",
+    "SCHEDULE": "Schedule",
+    "PRESENTATION": "Presentation",
+    "ABOUT": "About",
+    "REGISTER": "Register",
+    "LOCATION": "Location"
+  },
+  "TITLE": {
+    "LINE_1": "Talks on Advaita",
+    "LINE_2": "The Non-Dual Way to Awakening",
+    "LINE_3": "with",
+    "LINE_4": "Swami Atmananda",
+    "TIME": "Bucharest, 13-15 June 2025",
+    "PLACE": " ",
+    "REGISTER_NOW": "Register here"
+  },
+  "SCHEDULE": {
+    "TITLE": "INTENSIVE SATSANG PROGRAMME",
+    "FRIDAY": {
+      "TITLE": "Friday, June 13",
+      "LINE_1": "17:30 Welcome",
+      "LINE_2": "18:00 Satsang",
+      "LINE_3": "20:00 End of Satsang"
+    },
+    "SATURDAY": {
+      "TITLE": "Saturday, June 14",
+      "LINE_1": "10:00 Welcome",
+      "LINE_2": "10:30 Satsang",
+      "LINE_3": "12:30 Lunch Break",
+      "LINE_4": "15:00 Satsang",
+      "LINE_5": "17:00 End of Satsang"
+    },
+    "SUNDAY": {
+      "TITLE": "Sunday, June 15",
+      "LINE_1": "10:00 Welcome",
+      "LINE_2": "10:30 Satsang",
+      "LINE_3": "12:30 Lunch Break",
+      "LINE_4": "15:00 Satsang",
+      "LINE_5": "17:00 End of Satsang"
+    }
+  },
+  "PRESENTATION": {
+    "TITLE": "Presentation",
+    "CONTENT": {
+      "P1": "Swami Atmananda offers us the opportunity to deepen the theme of Spiritual Awakening and Self-Realization, based on the tradition of Advaita Vedanta.",
+      "P2": "Awakening is Pure Presence. It is neither an experience nor a state, but simply the spontaneous and immediate Recognition of our true Nature, the Self.",
+      "P3": "There is no 'awakened person,' only the pure presence of the Self..."
+    },
+    "TRANSLATION": {
+      "TITLE": "Simultaneous Translation",
+      "DESCRIPTION": "All 3 days of the Intensive Satsang will be conducted in English, with simultaneous translation into Romanian. Additional information on this topic will be provided via email after registering for the event."
+    }
+  },
+  "QUOTE": {
+    "TEXT": "You are the Truth, the Self, the timeless Consciousness",
+    "AUTHOR": "- Swami Atmananda Udasin -"
+  },
+  "ABOUT": {
+    "TITLE": "About Swami Atmananda",
+
+    "CONTENT": {
+      "P1": "Swami Atmananda Udasin is the Headmonk under whose guidance the Ajatananda Ashram community in Rishikesh, India operates – an interreligious monastic ashram dedicated to the Unity of Truth, designed to support spiritual seekers from all religious traditions.",
+      "P2": "Swami Atmananda is part of the Advaita Vedanta tradition and teaches the Direct Path of Non-Duality, regularly offering satsangs and retreats both in India and abroad.",
+      "P3": "Before embracing monastic life, Swami Atmananda worked as a university lecturer. Later, he spent a decade in solitude, first in a hermitage near Jerusalem and then in northern India, dedicating himself to deep spiritual practice. Towards the end of this period of retreat, he embraced Sanatana Dharma and, in 2001, received initiation into sannyasa (monastic renunciation) from his beloved spiritual Master, H.H. Sri Chandra Swami Udasin. His teachings continue to inspire seekers from around the world, guiding them towards Self-realization and inner peace."
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Contribution for the Event",
+    "DESCRIPTION": "This event is offered free of charge, and your contribution is intended exclusively to support the organization and cover logistical costs. It is not a fee for participation or for the teachings received, but a way to support the event.",
+    "AMOUNT": "Contribution 60€",
+    "FORM": {
+      "TITLE": "Register for the Event",
+      "BUTTON_OPEN": "Register",
+      "BUTTON_CLOSE": "Close registration form",
+      "INVITATION": "Join us for a special meeting with Swami Atmananda"
+    },
+    "SUPPORT": {
+      "TITLE": "Teachings",
+      "DESCRIPTION": "All programs organized by the Ashram in India and Europe are offered free of charge. Ajatananda Ashram is a non-profit organization and depends entirely on donations to cover daily expenses. If you feel inspired to support the Ashram and contribute to the promotion of its activities in the field of non-dual teachings and interreligious dialogue, you are welcome to do so through the Donation Box during the retreat or online.",
+      "VISIT_ASHRAM": "Visit Ajatananda Ashram",
+      "LOVE": "We look forward to welcoming you to the event!"
+    }
+  },
+  "LOCATION": {
+    "INFO": "Palatul Universul, Building A, Ion Brezoianu Street 23–25, Floor 5, Bucharest (near Cișmigiu Park)"
+  },
+  "FOOTER": {
+    "ORGANIZER_1": "Organized by the Center for Therapies, Meditation, and Yoga",
+    "ORGANIZER_2": "SAT CHIT ANANDA URBAN ASHRAM",
+    "COPYRIGHT": "© 2025 All rights reserved"
+  }
+}

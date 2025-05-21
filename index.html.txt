@@ -1,0 +1,350 @@
+<nav class="nav">
+  <div class="container nav-container">
+    <button
+      (click)="navToggle = !navToggle"
+      class="nav-toggle"
+      aria-label="Toggle menu"
+    >
+      ☰
+    </button>
+    <div class="nav-menu" [class.active]="navToggle">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#program" class="nav-link">Program</a>
+      <a href="#presentation" class="nav-link">Prezentare</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#register" class="nav-link">Register</a>
+      <a href="#location" class="nav-link">Location</a>
+    </div>
+  </div>
+</nav>
+
+<section id="hero" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <h1>
+      Realizarea Sinelui,
+      <br />
+      Calea Non-Dualității
+      <br />
+      cu SWAMI ATMANANDA
+    </h1>
+    <p>13-15 IUNIE 2025 • BUCURESTI, ROMANIA</p>
+    <a href="#register" class="button">Register Now</a>
+  </div>
+</section>
+
+<section id="program" class="program">
+  <div class="container">
+    <h2>SATSANG INTENSIV</h2>
+    <div class="program-cards">
+      <div class="card">
+        <h3>Vineri 13 Iunie</h3>
+        <ul>
+          <li>17:30 Primire</li>
+          <li>18:00 Satsang</li>
+          <li>20:00 Sfârșitul Satsangului</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sambata 14 Iunie</h3>
+        <ul>
+          <li>10:00 Primire</li>
+          <li>10:30 Satsang</li>
+          <li>12:30 Pauză de prânz</li>
+          <li>15:00 Satsang</li>
+          <li>17:00 Sfârșitul Satsangului</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Duminica 15 Iunie</h3>
+        <ul>
+          <li>10:00 Primire</li>
+          <li>10:30 Satsang</li>
+          <li>12:30 Pauză de prânz</li>
+          <li>15:00 Satsang</li>
+          <li>17:00 Sfârșitul Satsangului</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="presentation">
+  <div class="program-info">
+    <h2>Prezentare</h2>
+    <p>
+      Swami Atmananda ne oferă ocazia de a aprofunda tema Trezirii Spirituale și
+      a Realizării Sinelui, bazată pe tradiția Advaita Vedanta. Trezirea este
+      Prezență Pură. Nu este nici o experiență, nici o stare, ci pur și simplu
+      Recunoașterea spontană și imediată a adevăratei noastre Naturi, a Sinelui.
+      Nu există „o persoana trezita”, ci doar pura prezenta a Sinelui…
+    </p>
+    <p>
+      Satsang-ul incepe cu o perioadă de tăcere, urmată de o discuție și un
+      comentariu asupra scripturilor indiene din tradiția Vedanta
+    </p>
+    <p>
+      După discuție, participanții au ocazia să pună întrebări și să se angajeze
+      într-un dialog cu Swami Ji.
+    </p>
+
+    <h2>Traducere simultană</h2>
+    <p>
+      Toate cele 3 zile ale Satsangului Intensiv, vor fi susținute în limba
+      engleză, cu traducere simultană în limba Romana si Franceza. Informații
+      suplimentare pe această temă va vor fi furnizate prin e-mail după
+      înregistrarea la eveniment.
+    </p>
+  </div>
+</section>
+
+<section class="video-section">
+  <div class="quote">
+    <h2>"You are the Truth, the Self, the timeless Consciousness"</h2>
+    <p>Swami Atmananda Udasin</p>
+  </div>
+  <div class="container">
+    <div class="carousel">
+      @if(showCarouselButtons){
+      <button
+        (click)="moveToPrevSlide()"
+        class="carousel-button prev"
+        [disabled]="currentIndex === 0"
+      >
+        ❮
+      </button>
+      }
+      <div class="carousel-container">
+        <div class="carousel-track" #carousel_track>
+          <div class="carousel-slide">
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/8UdjhrZc_wA?si=8mxQxP2PwB5ulJol"
+                title="Guru Is Your True Self!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <h3>Guru Is Your True Self!</h3>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/TMFkLb-I0LM?si=_43i1XTKE89LxrRM"
+                title="Only Silence Can Hear Silence!"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <h3>Only Silence Can Hear Silence!</h3>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/xK-KK6iC6nk?si=-F4KOchTJXFLRR0R"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h3>Can the Wave Surrender to the Ocean?</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      @if(showCarouselButtons){
+      <button
+        (click)="moveToNextSlide()"
+        class="carousel-button next"
+        [disabled]="currentIndex === (slides?.length ?? 3) - 1"
+      >
+        ❯
+      </button>
+      }
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2>Despre Swami Atmananda</h2>
+    <div class="about-content">
+      <img
+        src="https://amis-ajatananda.org/wp-content/uploads/2025/02/Swami-Octobre-2020-left-gazing-700x455.jpg"
+        alt="Swami Atmananda"
+        class="about-image"
+      />
+      <div class="card">
+        <p>
+          Swami Atmananda face parte din tradiția Advaita Vedanta și predă Calea
+          Directă a Non-Dualității, oferind regulat satsanguri și retreaturi
+          atât în India, cât și în afara granițelor acesteia.
+        </p>
+        <p>
+          Înainte de a îmbrățișa viața monahală, Swami Atmananda a activat ca
+          lector universitar.
+        </p>
+        <p>
+          Ulterior, a petrecut un deceniu în solitudine, mai întâi într-un
+          hermitagiu din apropierea Ierusalimului și apoi în nordul Indiei,
+          dedicându-se unei practici spirituale profunde.
+        </p>
+        <p>
+          Ulterior, a petrecut un deceniu în solitudine, mai întâi într-un
+          hermitagiu din apropierea Ierusalimului și apoi în nordul Indiei,
+          dedicându-se unei practici spirituale profunde.
+        </p>
+        <p>
+          Ulterior, a petrecut un deceniu în solitudine, mai întâi într-un
+          hermitagiu din apropierea Ierusalimului și apoi în nordul Indiei,
+          dedicându-se unei practici spirituale profunde.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="register" class="register">
+  <h2>Contribuție pentru realizarea evenimentului</h2>
+  <p>
+    Acest eveniment este oferit în mod gratuit, iar contribuția ta este
+    destinată exclusiv susținerii organizării și acoperirii costurilor
+    logistice. Nu este o taxă pentru participare sau pentru învățătura primită,
+    ci un mod de a sprijini desfășurarea acestui eveniment.
+  </p>
+  <p><strong>Contributie 300 Ron</strong></p>
+  <div class="form-container">
+    <h2>Înregistrează-te pentru eveniment</h2>
+    <button
+      id="open-form"
+      class="button"
+      [class.open-registration]="toggleRegistrationForm"
+      (click)="toggleRegistartion()"
+    >
+      {{ toggleRegistrationForm ? "Close registartion form" : "Register" }}
+    </button>
+
+    @if(toggleRegistrationForm){
+    <iframe
+      #registration_form
+      src="https://form.jotform.com/250458895936475"
+      title="Registration Form"
+    ></iframe>
+    }
+
+    <p>
+      Alătură-te nouă pentru această întâlnire specială cu Swami Atmananda
+      Udasin.
+    </p>
+  </div>
+
+  <h2>Invatatura</h2>
+  <p>
+    Toate programele organizate de Ashramul din India și Europa sunt oferite
+    gratuit. Ajatananda Ashram este o organizație non-profit și depinde în
+    totalitate de donații pentru a acoperi cheltuielile zilnice. Dacă simți
+    inspirația de a sprijini Ashramul și de a contribui la promovarea
+    activităților sale în domeniul învățăturilor non-duale și al dialogului
+    interreligios, ești binevenit să o faci prin Cutia de Donații din timpul
+    retragerii sau online.
+  </p>
+
+  <div class="swami-website">
+    <span>Viziteaza Ajatananda Ashram </span>
+    <a
+      href="https://ajatananda.org/support-2/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="website-link"
+    >
+      www.ajatanandaashram.org
+    </a>
+    <p>Așteptăm cu drag să te întâmpinăm la eveniment!</p>
+  </div>
+</section>
+
+<section id="location" class="map">
+  <div class="container">
+    <strong
+      >Adresa exacta va fi comunicata celor inscrisi inainte de
+      eveniment.</strong
+    >
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d91152.65447336933!2d26.0680658!3d44.4429982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucharest!5e0!3m2!1sen!2sro!4v1739717614969!5m2!1sen!2sro"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div>
+    <div class="social-links">
+      <a
+        href="https://www.facebook.com/LakshmiBarbus"
+        target="_blank"
+        aria-label="Facebook"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+          ></path>
+        </svg>
+      </a>
+      <a
+        href="https://www.instagram.com/lakshmi_barbus/"
+        target="_blank"
+        aria-label="Instagram"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=pOGMu1kjkiI&ab_channel=ClinicaOanaNicolau"
+        target="_blank"
+        aria-label="YouTube"
+      >
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+          ></path>
+          <polygon
+            points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+          ></polygon>
+        </svg>
+      </a>
+    </div>
+    <p class="organizer">Organized by SAT CHIT ANANDA ASHRAM URBAN</p>
+    <p class="copyright">© 2025 All rights reserved.</p>
+  </div>
+</footer>

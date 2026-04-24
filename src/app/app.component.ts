@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+
 import {
   AfterViewInit,
   Component,
@@ -18,12 +18,11 @@ import {
 const LOCAL_STORAGE_LANGUAGE_KEY = 'lang';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
-  imports: [NgIf, TranslocoPipe, MatIconModule],
-  providers: [TranslocoService],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [TranslocoPipe, MatIconModule],
+    providers: [TranslocoService]
 })
 export class AppComponent implements AfterViewInit {
   @ViewChild('carousel_track') track!: ElementRef<HTMLElement>;

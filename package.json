@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^21.2.10",
     "@angular/platform-browser-dynamic": "^21.2.10",
     "@angular/router": "^21.2.10",
+    "@fortawesome/fontawesome-free": "^7.2.0",
     "@jsverse/transloco": "^7.5.1",
     "@mdi/angular-material": "^7.2.96",
     "flag-icons": "^7.3.2",

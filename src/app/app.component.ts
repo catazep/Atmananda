@@ -1,11 +1,14 @@
 
 import {
-  AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   ElementRef,
   HostListener,
+  afterNextRender,
+  computed,
   inject,
-  ViewChild,
+  signal,
+  viewChild,
 } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import {
@@ -18,96 +21,90 @@ import {
 const LOCAL_STORAGE_LANGUAGE_KEY = 'lang';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
-    imports: [TranslocoPipe, MatIconModule],
-    providers: [TranslocoService]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
+  imports: [TranslocoPipe, MatIconModule],
+  providers: [TranslocoService],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent implements AfterViewInit {
-  @ViewChild('carousel_track') track!: ElementRef<HTMLElement>;
-  @ViewChild('registration_form') registrationForm!: ElementRef<HTMLElement>;
-  public slides?: HTMLElement[];
-  public currentLanguage: string;
-  public languages: AvailableLangs;
+export class AppComponent {
+  private readonly track = viewChild.required<ElementRef<HTMLElement>>('carousel_track');
+  private readonly registrationFormRef = viewChild<ElementRef<HTMLElement>>('registration_form');
 
-  public currentIndex = 0;
-  public navToggle = false;
-  public showCarouselButtons = true;
-  public toggleRegistrationForm = false;
-  public isInitializeRegistartionForm = false;
-  public registrationFormSrc: string | undefined;
+  readonly currentLanguage = signal<string>('');
+  readonly languages: AvailableLangs;
 
-  public windowWidth: number = 0;
+  readonly slides = signal<HTMLElement[]>([]);
+  readonly currentIndex = signal(0);
+  readonly navToggle = signal(false);
+  readonly windowWidth = signal(window.innerWidth);
+  readonly showCarouselButtons = computed(() => this.windowWidth() < 1024);
+  readonly toggleRegistrationForm = signal(false);
+  readonly isRegistrationFormInitialized = signal(false);
 
-  private translocoService = inject(TranslocoService);
+  private readonly translocoService = inject(TranslocoService);
 
   constructor() {
-    this.currentLanguage =
+    const savedLang =
       localStorage.getItem(LOCAL_STORAGE_LANGUAGE_KEY) ??
       this.translocoService.getDefaultLang();
     this.languages = this.translocoService.getAvailableLangs();
-    this.changeLanguage(this.currentLanguage);
+    this.changeLanguage(savedLang);
+
+    afterNextRender(() => {
+      this.slides.set(
+        Array.from(this.track().nativeElement.children) as HTMLElement[]
+      );
+      this.updateSlidePosition();
+    });
   }
 
   @HostListener('window:resize')
-  onResize() {
-    this.currentIndex = 0;
-    this.updateSlidePosition();
-    this.setCarouselButtonsState();
-    this.windowWidth = window.innerWidth;
-  }
-
-  public ngAfterViewInit() {
-    this.slides = Array.from(
-      this.track.nativeElement.children
-    ) as HTMLElement[];
+  onResize(): void {
+    this.currentIndex.set(0);
+    this.windowWidth.set(window.innerWidth);
     this.updateSlidePosition();
   }
 
-  public changeLanguage(lang: string | LangDefinition) {
-    this.currentLanguage = lang as string;
-    this.translocoService.setActiveLang(this.currentLanguage);
-    localStorage.setItem(LOCAL_STORAGE_LANGUAGE_KEY, this.currentLanguage);
+  changeLanguage(lang: string | LangDefinition): void {
+    const langStr = lang as string;
+    this.currentLanguage.set(langStr);
+    this.translocoService.setActiveLang(langStr);
+    localStorage.setItem(LOCAL_STORAGE_LANGUAGE_KEY, langStr);
   }
 
-  public updateSlidePosition() {
-    if (this.slides) {
-      const slideWidth = this.slides[0].getBoundingClientRect().width;
-      this.track.nativeElement.style.transform = `translateX(-${
-        this.currentIndex * slideWidth
-      }px)`;
-    }
-  }
-
-  public moveToNextSlide() {
-    if (this.slides && this.currentIndex < this.slides?.length - 1) {
-      this.currentIndex++;
+  moveToNextSlide(): void {
+    if (this.currentIndex() < this.slides().length - 1) {
+      this.currentIndex.update((i) => i + 1);
       this.updateSlidePosition();
     }
   }
 
-  public moveToPrevSlide() {
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
+  moveToPrevSlide(): void {
+    if (this.currentIndex() > 0) {
+      this.currentIndex.update((i) => i - 1);
       this.updateSlidePosition();
     }
   }
 
-  public setCarouselButtonsState(): void {
-    this.showCarouselButtons = window.innerWidth < 1024;
-  }
-
-  public toggleRegistartion(): void {
-    this.isInitializeRegistartionForm = true;
-    this.toggleRegistrationForm = !this.toggleRegistrationForm;
-    if (this.toggleRegistrationForm) {
+  toggleRegistration(): void {
+    this.isRegistrationFormInitialized.set(true);
+    this.toggleRegistrationForm.update((v) => !v);
+    if (this.toggleRegistrationForm()) {
       setTimeout(() => {
-        this.registrationForm.nativeElement?.scrollIntoView({
+        this.registrationFormRef()?.nativeElement?.scrollIntoView({
           behavior: 'smooth',
           block: 'center',
         });
       }, 100);
     }
+  }
+
+  private updateSlidePosition(): void {
+    const slides = this.slides();
+    if (!slides.length) return;
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    this.track().nativeElement.style.transform = `translateX(-${this.currentIndex() * slideWidth}px)`;
   }
 }

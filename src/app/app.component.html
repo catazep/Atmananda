@@ -1,13 +1,13 @@
 <nav class="nav">
   <div class="container nav-container">
     <button
-      (click)="navToggle = !navToggle"
+      (click)="navToggle.set(!navToggle())"
       class="nav-toggle"
       aria-label="Toggle menu"
       >
       ☰
     </button>
-    <div class="nav-menu" [class.active]="navToggle">
+    <div class="nav-menu" [class.active]="navToggle()">
       <a href="#home" class="nav-link">{{ "MENU_ITEMS.HOME" | transloco }}</a>
       <a href="#presentation" class="nav-link">{{
         "MENU_ITEMS.PRESENTATION" | transloco
@@ -28,7 +28,7 @@
       @for(language of languages; track language){
         <span
           class="fi fi-{{ language === 'en' ? 'gb' : language }} flag"
-          [class.active]="language === currentLanguage"
+          [class.active]="language === currentLanguage()"
           (click)="changeLanguage(language)"
         ></span>
       }
@@ -98,7 +98,7 @@
           alt="Swami Atmananda"
           class="about-image"
           />
-          @if(windowWidth >= 1024){
+          @if(windowWidth() >= 1024){
             <div class="swami-website">
               <br />
               <br />
@@ -125,7 +125,7 @@
             {{ "ABOUT.CONTENT.P3" | transloco }}
           </p>
         </div>
-        @if(windowWidth < 1024){
+        @if(windowWidth() < 1024){
           <div class="swami-website">
             <span>{{ "REGISTER.SUPPORT.VISIT_ASHRAM" | transloco }}</span>
             <a
@@ -149,11 +149,11 @@
     </div>
     <div class="container">
       <div class="carousel">
-        @if(showCarouselButtons){
+        @if(showCarouselButtons()){
           <button
             (click)="moveToPrevSlide()"
             class="carousel-button prev"
-            [disabled]="currentIndex === 0"
+            [disabled]="currentIndex() === 0"
             >
             ❮
           </button>
@@ -203,11 +203,11 @@
             </div>
           </div>
         </div>
-        @if(showCarouselButtons){
+        @if(showCarouselButtons()){
           <button
             (click)="moveToNextSlide()"
             class="carousel-button next"
-            [disabled]="currentIndex === (slides?.length ?? 3) - 1"
+            [disabled]="currentIndex() === (slides().length || 3) - 1"
             >
             ❯
           </button>
@@ -269,19 +269,19 @@
       <button
         id="open-form"
         class="button"
-        [class.open-registration]="toggleRegistrationForm"
-        (click)="toggleRegistartion()"
+        [class.open-registration]="toggleRegistrationForm()"
+        (click)="toggleRegistration()"
         >
         {{
-        toggleRegistrationForm
+        toggleRegistrationForm()
         ? ("REGISTER.FORM.BUTTON_CLOSE" | transloco)
         : ("REGISTER.FORM.BUTTON_OPEN" | transloco)
         }}
       </button>
-      @if (isInitializeRegistartionForm) {
-        @switch (currentLanguage) { @case ('ro') {
+      @if (isRegistrationFormInitialized()) {
+        @switch (currentLanguage()) { @case ('ro') {
           <iframe
-            [hidden]="!toggleRegistrationForm"
+            [hidden]="!toggleRegistrationForm()"
             #registration_form
             src="https://form.jotform.com/250458895936475"
             title="Registration Form"
@@ -289,7 +289,7 @@
           </iframe>
           } @case ('en') {
           <iframe
-            [hidden]="!toggleRegistrationForm"
+            [hidden]="!toggleRegistrationForm()"
             #registration_form
             src="https://form.jotform.com/250503450416446"
             title="Registration Form"
@@ -297,7 +297,7 @@
           </iframe>
           } @case ('fr') {
           <iframe
-            [hidden]="!toggleRegistrationForm"
+            [hidden]="!toggleRegistrationForm()"
             #registration_form
             src="https://form.jotform.com/250503750252447"
             title="Registration Form"
@@ -316,7 +316,7 @@
       <div class="container">
         <strong class="title">{{ "LOCATION.INFO" | transloco }}</strong>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8804385498006!2d26.094575000000003!3d44.4356147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff37b13c1e7d%3A0xe50c81b8ff22932b!2z4oCdVW5pdmVyc3Vs4oCdIFBhbGFjZQ!5e0!3m2!1sen!2sro!4v1746188204593!5m2!1sen!2sro"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8804385498006!2d26.094575000000003!3d44.4356147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff37b13c1e7d%3A0xe50c81b8ff22932b!2z4oCdVW5pdmVyc3Ul4oCdIFBhbGFjZQ!5e0!3m2!1sen!2sro!4v1746188204593!5m2!1sen!2sro"
           allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
@@ -347,7 +347,7 @@
           </li>
           <li>
             <i class="fas fa-map-marker-alt"></i> Universitate, Bd. Regina
-            Elisabeta, nr.25, Bucuresti
+            Elisabeta, nr.25, Bucuresti
           </li>
         </ul>
         <p class="copyright">{{ "FOOTER.COPYRIGHT" | transloco }}</p>

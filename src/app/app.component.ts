@@ -1,4 +1,4 @@
-import { NgIf } from '@angular/common';
+
 import {
   AfterViewInit,
   Component,
@@ -21,7 +21,7 @@ const LOCAL_STORAGE_LANGUAGE_KEY = 'lang';
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [NgIf, TranslocoPipe, MatIconModule],
+    imports: [TranslocoPipe, MatIconModule],
     providers: [TranslocoService]
 })
 export class AppComponent implements AfterViewInit {

@@ -8,7 +8,6 @@ import {
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideTransloco } from '@jsverse/transloco';
 import { TranslocoHttpLoader } from '../transloco-loader';
 import { provideHttpClient } from '@angular/common/http';
@@ -29,7 +28,6 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(MaterialDesignIconsModule),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideAnimationsAsync(),
     provideHttpClient(),
     provideTransloco({
       config: {

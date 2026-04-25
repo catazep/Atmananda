@@ -13,7 +13,6 @@
     "LINE_3": "cu",
     "LINE_4": "Swami Atmananda",
     "TIME": "București, 13–15 Iunie 2025",
-    "PLACE": " ",
     "REGISTER_NOW": "Înregistrați-vă aici"
   },
   "SCHEDULE": {
@@ -47,10 +46,6 @@
       "P1": "Swami Atmananda ne oferă ocazia de a aprofunda tema Trezirii Spirituale și a Realizării Sinelui, bazată pe tradiția Advaita Vedanta.",
       "P2": "Trezirea este Prezența Pură. Nu este nici o experiență, nici o stare, ci pur și simplu Recunoașterea spontană și imediată a adevăratei noastre Naturi, a Sinelui.",
       "P3": "Nu există „o persoană trezită”, ci doar pură prezență a Sinelui..."
-    },
-    "TRANSLATION": {
-      "TITLE": "Traducere simultană",
-      "DESCRIPTION": "Toate cele 3 zile ale Satsangului Intensiv vor fi susținute în limba engleză, cu traducere simultană în limba română. Informații suplimentare pe această temă vă vor fi furnizate prin e-mail după înregistrarea la eveniment."
     }
   },
   "QUOTE": {
@@ -78,8 +73,7 @@
     "SUPPORT": {
       "TITLE": "Învățătură",
       "DESCRIPTION": "Toate programele organizate de Ashramul din India și Europa sunt oferite gratuit. Ajatananda Ashram este o organizație non-profit și depinde în totalitate de donații pentru a acoperi cheltuielile zilnice. Dacă simți inspirația de a sprijini Ashramul și de a contribui la promovarea activităților sale în domeniul învățăturilor non-duale și al dialogului interreligios, ești binevenit să o faci prin Cutia de Donații din timpul retragerii sau online.",
-      "VISIT_ASHRAM": "Vizitează Ajatananda Ashram",
-      "LOVE": "Așteptăm cu drag să te întâmpinăm la eveniment!"
+      "VISIT_ASHRAM": "Vizitează Ajatananda Ashram"
     }
   },
   "LOCATION": {

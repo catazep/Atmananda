@@ -13,7 +13,6 @@
     "LINE_3": "avec",
     "LINE_4": "SWAMI ATMANANDA",
     "TIME": "13-15 JUIN 2025",
-    "PLACE": "BUCAREST, ROUMANIE",
     "REGISTER_NOW": "Inscrivez-vous maintenant"
   },
   "SCHEDULE": {
@@ -47,10 +46,6 @@
       "P1": "Swami Atmananda nous offre l'opportunité d'approfondir le thème de l'Éveil Spirituel et de la Réalisation du Soi, basé sur la tradition de l'Advaita Vedanta.",
       "P2": "L'éveil est la Présence Pure. Ce n'est ni une expérience ni un état, mais simplement la Reconnaissance spontanée et immédiate de notre vraie Nature, le Soi.",
       "P3": "Il n'y a pas de 'personne éveillée', seulement la présence pure du Soi..."
-    },
-    "TRANSLATION": {
-      "TITLE": "Traduction simultanée",
-      "DESCRIPTION": "Les 3 jours du Satsang Intensif seront animés en anglais, avec traduction simultanée en roumain et en français. Des informations supplémentaires sur ce sujet vous seront fournies par e-mail après votre inscription à l'événement."
     }
   },
   "QUOTE": {
@@ -78,8 +73,7 @@
     "SUPPORT": {
       "TITLE": "Enseignements",
       "DESCRIPTION": "Tous les programmes organisés par l'Ashram en Inde et en Europe sont offerts gratuitement. Ajatananda Ashram est une organisation à but non lucratif et dépend entièrement des dons pour couvrir les dépenses quotidiennes. Si vous vous sentez inspiré pour soutenir l'Ashram et contribuer à la promotion de ses activités dans le domaine des enseignements non-duels et du dialogue interreligieux, vous êtes les bienvenus pour le faire via la Boîte à Dons pendant la retraite ou en ligne.",
-      "VISIT_ASHRAM": "Visitez Ajatananda Ashram",
-      "LOVE": "Nous avons hâte de vous accueillir à l'événement !"
+      "VISIT_ASHRAM": "Visitez Ajatananda Ashram"
     }
   },
   "LOCATION": {

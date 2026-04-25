@@ -13,7 +13,6 @@
     "LINE_3": "with",
     "LINE_4": "Swami Atmananda",
     "TIME": "Bucharest, 13-15 June 2025",
-    "PLACE": " ",
     "REGISTER_NOW": "Register here"
   },
   "SCHEDULE": {
@@ -79,8 +78,7 @@
     "SUPPORT": {
       "TITLE": "Teachings",
       "DESCRIPTION": "All programs organized by the Ashram in India and Europe are offered free of charge. Ajatananda Ashram is a non-profit organization and depends entirely on donations to cover daily expenses. If you feel inspired to support the Ashram and contribute to the promotion of its activities in the field of non-dual teachings and interreligious dialogue, you are welcome to do so through the Donation Box during the retreat or online.",
-      "VISIT_ASHRAM": "Visit Ajatananda Ashram",
-      "LOVE": "We look forward to welcoming you to the event!"
+      "VISIT_ASHRAM": "Visit Ajatananda Ashram"
     }
   },
   "LOCATION": {

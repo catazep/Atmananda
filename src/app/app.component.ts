@@ -17,6 +17,7 @@ import {
   TranslocoPipe,
   TranslocoService,
 } from '@jsverse/transloco';
+import { CORE_TRANSLATION_KEYS } from './core/translations';
 
 const LOCAL_STORAGE_LANGUAGE_KEY = 'lang';
 
@@ -35,6 +36,8 @@ export class AppComponent {
   readonly currentLanguage = signal<string>('');
   readonly languages: AvailableLangs;
 
+  
+  public readonly translationKeys = CORE_TRANSLATION_KEYS;
   readonly slides = signal<HTMLElement[]>([]);
   readonly currentIndex = signal(0);
   readonly navToggle = signal(false);

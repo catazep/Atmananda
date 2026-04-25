@@ -8,19 +8,19 @@
       ☰
     </button>
     <div class="nav-menu" [class.active]="navToggle()">
-      <a href="#home" class="nav-link">{{ "MENU_ITEMS.HOME" | transloco }}</a>
+      <a href="#home" class="nav-link">{{ translationKeys.MENU_ITEMS.HOME | transloco }}</a>
       <a href="#presentation" class="nav-link">{{
-        "MENU_ITEMS.PRESENTATION" | transloco
+        translationKeys.MENU_ITEMS.PRESENTATION | transloco
       }}</a>
-      <a href="#about" class="nav-link">{{ "MENU_ITEMS.ABOUT" | transloco }}</a>
+      <a href="#about" class="nav-link">{{ translationKeys.MENU_ITEMS.ABOUT | transloco }}</a>
       <a href="#program" class="nav-link">{{
-        "MENU_ITEMS.SCHEDULE" | transloco
+        translationKeys.MENU_ITEMS.SCHEDULE | transloco
       }}</a>
       <a href="#register" class="nav-link">{{
-        "MENU_ITEMS.REGISTER" | transloco
+        translationKeys.MENU_ITEMS.REGISTER | transloco
       }}</a>
       <a href="#location" class="nav-link">{{
-        "MENU_ITEMS.LOCATION" | transloco
+        translationKeys.MENU_ITEMS.LOCATION | transloco
       }}</a>
     </div>
 
@@ -53,16 +53,16 @@
   <div class="container">
     <div class="main-page">
       <span class="main-page-container">
-        <span class="large-font">{{ "TITLE.LINE_1" | transloco }}</span>
-        <span class="small-font">{{ "TITLE.LINE_2" | transloco }}</span>
+        <span class="large-font">{{ translationKeys.TITLE.LINE_1 | transloco }}</span>
+        <span class="small-font">{{ translationKeys.TITLE.LINE_2 | transloco }}</span>
       </span>
       <span class="main-page-container">
-        <span class="small-font">{{ "TITLE.LINE_3" | transloco }}</span>
-        <span class="large-font special">{{ "TITLE.LINE_4" | transloco }}</span>
+        <span class="small-font">{{ translationKeys.TITLE.LINE_3 | transloco }}</span>
+        <span class="large-font special">{{ translationKeys.TITLE.LINE_4 | transloco }}</span>
       </span>
-      <p class="small-font">{{ "TITLE.TIME" | transloco }}</p>
+      <p class="small-font">{{ translationKeys.TITLE.TIME | transloco }}</p>
       <a href="#register" class="register-button">{{
-        "TITLE.REGISTER_NOW" | transloco
+        translationKeys.TITLE.REGISTER_NOW | transloco
       }}</a>
     </div>
   </div>
@@ -70,27 +70,27 @@
 
 <section id="presentation">
   <div class="program-info">
-    <h2>{{ "PRESENTATION.TITLE" | transloco }}</h2>
+    <h2>{{ translationKeys.PRESENTATION.TITLE | transloco }}</h2>
     <p>
-      {{ "PRESENTATION.CONTENT.P1" | transloco }}
+      {{ translationKeys.PRESENTATION.CONTENT.P1 | transloco }}
     </p>
     <p>
-      {{ "PRESENTATION.CONTENT.P2" | transloco }}
+      {{ translationKeys.PRESENTATION.CONTENT.P2 | transloco }}
     </p>
     <p>
-      {{ "PRESENTATION.CONTENT.P3" | transloco }}
+      {{ translationKeys.PRESENTATION.CONTENT.P3 | transloco }}
     </p>
 
-    <h2>{{ "PRESENTATION.TRANSLATION.TITLE" | transloco }}</h2>
+    <h2>{{ translationKeys.PRESENTATION.TRANSLATION.TITLE | transloco }}</h2>
     <p>
-      {{ "PRESENTATION.TRANSLATION.DESCRIPTION" | transloco }}
+      {{ translationKeys.PRESENTATION.TRANSLATION.DESCRIPTION | transloco }}
     </p>
   </div>
 </section>
 
 <section id="about" class="about">
   <div class="container">
-    <h2>{{ "ABOUT.TITLE" | transloco }}</h2>
+    <h2>{{ translationKeys.ABOUT.TITLE | transloco }}</h2>
     <div class="about-content">
       <div>
         <img
@@ -102,7 +102,7 @@
             <div class="swami-website">
               <br />
               <br />
-              <span>{{ "REGISTER.SUPPORT.VISIT_ASHRAM" | transloco }}</span>
+              <span>{{ translationKeys.REGISTER.SUPPORT.VISIT_ASHRAM | transloco }}</span>
               <a
                 href="https://ajatananda.org"
                 target="_blank"
@@ -116,18 +116,18 @@
         </div>
         <div class="card">
           <p>
-            {{ "ABOUT.CONTENT.P1" | transloco }}
+            {{ translationKeys.ABOUT.CONTENT.P1 | transloco }}
           </p>
           <p>
-            {{ "ABOUT.CONTENT.P2" | transloco }}
+            {{ translationKeys.ABOUT.CONTENT.P2 | transloco }}
           </p>
           <p>
-            {{ "ABOUT.CONTENT.P3" | transloco }}
+            {{ translationKeys.ABOUT.CONTENT.P3 | transloco }}
           </p>
         </div>
         @if(windowWidth() < 1024){
           <div class="swami-website">
-            <span>{{ "REGISTER.SUPPORT.VISIT_ASHRAM" | transloco }}</span>
+            <span>{{ translationKeys.REGISTER.SUPPORT.VISIT_ASHRAM | transloco }}</span>
             <a
               href="https://ajatananda.org"
               target="_blank"
@@ -144,8 +144,8 @@
 
   <section class="video-section">
     <div class="quote">
-      <h2>"{{ "QUOTE.TEXT" | transloco }}"</h2>
-      <p>{{ "QUOTE.AUTHOR" | transloco }}</p>
+      <h2>"{{ translationKeys.QUOTE.TEXT | transloco }}"</h2>
+      <p>{{ translationKeys.QUOTE.AUTHOR | transloco }}</p>
     </div>
     <div class="container">
       <div class="carousel">
@@ -218,34 +218,34 @@
 
   <section id="program" class="program">
     <div class="container">
-      <h2>{{ "SCHEDULE.TITLE" | transloco }}</h2>
+      <h2>{{ translationKeys.SCHEDULE.TITLE | transloco }}</h2>
       <div class="program-cards">
         <div class="card">
-          <h3>{{ "SCHEDULE.FRIDAY.TITLE" | transloco }}</h3>
+          <h3>{{ translationKeys.SCHEDULE.FRIDAY.TITLE | transloco }}</h3>
           <ul>
-            <li>{{ "SCHEDULE.FRIDAY.LINE_1" | transloco }}</li>
-            <li>{{ "SCHEDULE.FRIDAY.LINE_2" | transloco }}</li>
-            <li>{{ "SCHEDULE.FRIDAY.LINE_3" | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_1 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_2 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_3 | transloco }}</li>
           </ul>
         </div>
         <div class="card">
-          <h3>{{ "SCHEDULE.SATURDAY.TITLE" | transloco }}</h3>
+          <h3>{{ translationKeys.SCHEDULE.SATURDAY.TITLE | transloco }}</h3>
           <ul>
-            <li>{{ "SCHEDULE.SATURDAY.LINE_1" | transloco }}</li>
-            <li>{{ "SCHEDULE.SATURDAY.LINE_2" | transloco }}</li>
-            <li>{{ "SCHEDULE.SATURDAY.LINE_3" | transloco }}</li>
-            <li>{{ "SCHEDULE.SATURDAY.LINE_4" | transloco }}</li>
-            <li>{{ "SCHEDULE.SATURDAY.LINE_5" | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_1 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_2 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_3 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_4 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_5 | transloco }}</li>
           </ul>
         </div>
         <div class="card">
-          <h3>{{ "SCHEDULE.SUNDAY.TITLE" | transloco }}</h3>
+          <h3>{{ translationKeys.SCHEDULE.SUNDAY.TITLE | transloco }}</h3>
           <ul>
-            <li>{{ "SCHEDULE.SUNDAY.LINE_1" | transloco }}</li>
-            <li>{{ "SCHEDULE.SUNDAY.LINE_2" | transloco }}</li>
-            <li>{{ "SCHEDULE.SUNDAY.LINE_3" | transloco }}</li>
-            <li>{{ "SCHEDULE.SUNDAY.LINE_4" | transloco }}</li>
-            <li>{{ "SCHEDULE.SUNDAY.LINE_5" | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_1 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_2 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_3 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_4 | transloco }}</li>
+            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_5 | transloco }}</li>
           </ul>
         </div>
       </div>
@@ -253,19 +253,19 @@
   </section>
 
   <section class="register">
-    <h2>{{ "REGISTER.SUPPORT.TITLE" | transloco }}</h2>
+    <h2>{{ translationKeys.REGISTER.SUPPORT.TITLE | transloco }}</h2>
     <p>
-      {{ "REGISTER.SUPPORT.DESCRIPTION" | transloco }}
+      {{ translationKeys.REGISTER.SUPPORT.DESCRIPTION | transloco }}
     </p>
-    <h2 id="register">{{ "REGISTER.TITLE" | transloco }}</h2>
+    <h2 id="register">{{ translationKeys.REGISTER.TITLE | transloco }}</h2>
     <p>
-      {{ "REGISTER.DESCRIPTION" | transloco }}
+      {{ translationKeys.REGISTER.DESCRIPTION | transloco }}
     </p>
     <p>
-      <strong>{{ "REGISTER.AMOUNT" | transloco }}</strong>
+      <strong>{{ translationKeys.REGISTER.AMOUNT | transloco }}</strong>
     </p>
     <div class="form-container">
-      <h2>{{ "REGISTER.FORM.TITLE" | transloco }}</h2>
+      <h2>{{ translationKeys.REGISTER.FORM.TITLE | transloco }}</h2>
       <button
         id="open-form"
         class="button"
@@ -274,8 +274,8 @@
         >
         {{
         toggleRegistrationForm()
-        ? ("REGISTER.FORM.BUTTON_CLOSE" | transloco)
-        : ("REGISTER.FORM.BUTTON_OPEN" | transloco)
+        ? (translationKeys.REGISTER.FORM.BUTTON_CLOSE | transloco)
+        : (translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco)
         }}
       </button>
       @if (isRegistrationFormInitialized()) {
@@ -307,14 +307,14 @@
         }
 
         <p class="invitation">
-          {{ "REGISTER.FORM.INVITATION" | transloco }}
+          {{ translationKeys.REGISTER.FORM.INVITATION | transloco }}
         </p>
       </div>
     </section>
 
     <section id="location" class="map">
       <div class="container">
-        <strong class="title">{{ "LOCATION.INFO" | transloco }}</strong>
+        <strong class="title">{{ translationKeys.LOCATION.INFO | transloco }}</strong>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8804385498006!2d26.094575000000003!3d44.4356147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff37b13c1e7d%3A0xe50c81b8ff22932b!2z4oCdVW5pdmVyc3Ul4oCdIFBhbGFjZQ!5e0!3m2!1sen!2sro!4v1746188204593!5m2!1sen!2sro"
           allowfullscreen
@@ -332,8 +332,8 @@
             <mat-icon class="icon" svgIcon="temple-buddhist-outline" />
           </a>
         </div>
-        <p class="organizer">{{ "FOOTER.ORGANIZER_1" | transloco }}</p>
-        <p class="organizer">{{ "FOOTER.ORGANIZER_2" | transloco }}</p>
+        <p class="organizer">{{ translationKeys.FOOTER.ORGANIZER_1 | transloco }}</p>
+        <p class="organizer">{{ translationKeys.FOOTER.ORGANIZER_2 | transloco }}</p>
         <br />
         <ul class="organizer">
           <li>
@@ -350,6 +350,6 @@
             Elisabeta, nr.25, Bucuresti
           </li>
         </ul>
-        <p class="copyright">{{ "FOOTER.COPYRIGHT" | transloco }}</p>
+        <p class="copyright">{{ translationKeys.FOOTER.COPYRIGHT | transloco }}</p>
       </div>
     </footer>

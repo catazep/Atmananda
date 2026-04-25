@@ -13,10 +13,12 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
     LINE_1: t,
     LINE_2: t,
     LINE_3: t,
-    PLACE: t,
+    LINE_4: t,
+    TIME: t,
     REGISTER_NOW: t,
   },
   SCHEDULE: {
+    TITLE: t,
     FRIDAY: {
       TITLE: t,
       LINE_1: t,
@@ -77,13 +79,15 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
     SUPPORT: {
       TITLE: t,
       DESCRIPTION: t,
+      VISIT_ASHRAM: t,
     },
   },
   LOCATION: {
     INFO: t,
   },
   FOOTER: {
-    ORGANIZER: t,
+    ORGANIZER_1: t,
+    ORGANIZER_2: t,
     COPYRIGHT: t,
   },
 }));

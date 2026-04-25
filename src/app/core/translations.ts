@@ -48,11 +48,7 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
       P1: t,
       P2: t,
       P3: t,
-    },
-    TRANSLATION: {
-      TITLE: t,
-      DESCRIPTION: t,
-    },
+    }
   },
   QUOTE: {
     TEXT: t,

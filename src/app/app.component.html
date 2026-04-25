@@ -4,15 +4,19 @@
       (click)="navToggle.set(!navToggle())"
       class="nav-toggle"
       aria-label="Toggle menu"
-      >
+    >
       ☰
     </button>
     <div class="nav-menu" [class.active]="navToggle()">
-      <a href="#home" class="nav-link">{{ translationKeys.MENU_ITEMS.HOME | transloco }}</a>
+      <a href="#home" class="nav-link">{{
+        translationKeys.MENU_ITEMS.HOME | transloco
+      }}</a>
       <a href="#presentation" class="nav-link">{{
         translationKeys.MENU_ITEMS.PRESENTATION | transloco
       }}</a>
-      <a href="#about" class="nav-link">{{ translationKeys.MENU_ITEMS.ABOUT | transloco }}</a>
+      <a href="#about" class="nav-link">{{
+        translationKeys.MENU_ITEMS.ABOUT | transloco
+      }}</a>
       <a href="#program" class="nav-link">{{
         translationKeys.MENU_ITEMS.SCHEDULE | transloco
       }}</a>
@@ -25,7 +29,7 @@
     </div>
 
     <div class="flags-container">
-      @for(language of languages; track language){
+      @for (language of languages; track language) {
         <span
           class="fi fi-{{ language === 'en' ? 'gb' : language }} flag"
           [class.active]="language === currentLanguage()"
@@ -53,12 +57,20 @@
   <div class="container">
     <div class="main-page">
       <span class="main-page-container">
-        <span class="large-font">{{ translationKeys.TITLE.LINE_1 | transloco }}</span>
-        <span class="small-font">{{ translationKeys.TITLE.LINE_2 | transloco }}</span>
+        <span class="large-font">{{
+          translationKeys.TITLE.LINE_1 | transloco
+        }}</span>
+        <span class="small-font">{{
+          translationKeys.TITLE.LINE_2 | transloco
+        }}</span>
       </span>
       <span class="main-page-container">
-        <span class="small-font">{{ translationKeys.TITLE.LINE_3 | transloco }}</span>
-        <span class="large-font special">{{ translationKeys.TITLE.LINE_4 | transloco }}</span>
+        <span class="small-font">{{
+          translationKeys.TITLE.LINE_3 | transloco
+        }}</span>
+        <span class="large-font special">{{
+          translationKeys.TITLE.LINE_4 | transloco
+        }}</span>
       </span>
       <p class="small-font">{{ translationKeys.TITLE.TIME | transloco }}</p>
       <a href="#register" class="register-button">{{
@@ -92,235 +104,269 @@
           src="assets/img/Atmananda_leafs.png"
           alt="Swami Atmananda"
           class="about-image"
-          />
-          @if(windowWidth() >= 1024){
-            <div class="swami-website">
-              <br />
-              <br />
-              <span>{{ translationKeys.REGISTER.SUPPORT.VISIT_ASHRAM | transloco }}</span>
-              <a
-                href="https://ajatananda.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="website-link"
-                >
-                www.ajatananda.org
-              </a>
-            </div>
-          }
-        </div>
-        <div class="card">
-          <p>
-            {{ translationKeys.ABOUT.CONTENT.P1 | transloco }}
-          </p>
-          <p>
-            {{ translationKeys.ABOUT.CONTENT.P2 | transloco }}
-          </p>
-          <p>
-            {{ translationKeys.ABOUT.CONTENT.P3 | transloco }}
-          </p>
-        </div>
-        @if(windowWidth() < 1024){
+        />
+        @if (windowWidth() >= 1024) {
           <div class="swami-website">
-            <span>{{ translationKeys.REGISTER.SUPPORT.VISIT_ASHRAM | transloco }}</span>
+            <br />
+            <br />
+            <span>{{
+              translationKeys.REGISTER.SUPPORT.VISIT_ASHRAM | transloco
+            }}</span>
             <a
               href="https://ajatananda.org"
               target="_blank"
               rel="noopener noreferrer"
               class="website-link"
-              >
+            >
               www.ajatananda.org
             </a>
           </div>
         }
       </div>
+      <div class="card">
+        <p>
+          {{ translationKeys.ABOUT.CONTENT.P1 | transloco }}
+        </p>
+        <p>
+          {{ translationKeys.ABOUT.CONTENT.P2 | transloco }}
+        </p>
+        <p>
+          {{ translationKeys.ABOUT.CONTENT.P3 | transloco }}
+        </p>
+      </div>
+      @if (windowWidth() < 1024) {
+        <div class="swami-website">
+          <span>{{
+            translationKeys.REGISTER.SUPPORT.VISIT_ASHRAM | transloco
+          }}</span>
+          <a
+            href="https://ajatananda.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="website-link"
+          >
+            www.ajatananda.org
+          </a>
+        </div>
+      }
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="video-section">
-    <div class="quote">
-      <h2>"{{ translationKeys.QUOTE.TEXT | transloco }}"</h2>
-      <p>{{ translationKeys.QUOTE.AUTHOR | transloco }}</p>
-    </div>
-    <div class="container">
-      <div class="carousel">
-        @if(showCarouselButtons()){
-          <button
-            (click)="moveToPrevSlide()"
-            class="carousel-button prev"
-            [disabled]="currentIndex() === 0"
-            >
-            ❮
-          </button>
-        }
-        <div class="carousel-container">
-          <div class="carousel-track" #carousel_track>
-            <div class="carousel-slide">
-              <div class="video-card">
-                <iframe
-                  src="https://www.youtube.com/embed/MH7beFld-mM?si=DlO0W6F03Qd5tOEp"
-                  title="Grace Is What You Are"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  >
-                </iframe>
-                <h3>Grace Is What You Are</h3>
-              </div>
+<section class="video-section">
+  <div class="quote">
+    <h2>"{{ translationKeys.QUOTE.TEXT | transloco }}"</h2>
+    <p>{{ translationKeys.QUOTE.AUTHOR | transloco }}</p>
+  </div>
+  <div class="container">
+    <div class="carousel">
+      @if (showCarouselButtons()) {
+        <button
+          (click)="moveToPrevSlide()"
+          class="carousel-button prev"
+          [disabled]="currentIndex() === 0"
+        >
+          ❮
+        </button>
+      }
+      <div class="carousel-container">
+        <div class="carousel-track" #carousel_track>
+          <div class="carousel-slide">
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/MH7beFld-mM?si=DlO0W6F03Qd5tOEp"
+                title="Grace Is What You Are"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <h3>Grace Is What You Are</h3>
             </div>
-            <div class="carousel-slide">
-              <div class="video-card">
-                <iframe
-                  src="https://www.youtube.com/embed/TMFkLb-I0LM?si=_43i1XTKE89LxrRM"
-                  title="Only Silence Can Hear Silence!"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                  >
-                </iframe>
-                <h3>Only Silence Can Hear Silence!</h3>
-              </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/TMFkLb-I0LM?si=_43i1XTKE89LxrRM"
+                title="Only Silence Can Hear Silence!"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <h3>Only Silence Can Hear Silence!</h3>
             </div>
-            <div class="carousel-slide">
-              <div class="video-card">
-                <iframe
-                  src="https://www.youtube.com/embed/xK-KK6iC6nk?si=-F4KOchTJXFLRR0R"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-                <h3>Can the Wave Surrender to the Ocean?</h3>
-              </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="video-card">
+              <iframe
+                src="https://www.youtube.com/embed/xK-KK6iC6nk?si=-F4KOchTJXFLRR0R"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h3>Can the Wave Surrender to the Ocean?</h3>
             </div>
           </div>
         </div>
-        @if(showCarouselButtons()){
-          <button
-            (click)="moveToNextSlide()"
-            class="carousel-button next"
-            [disabled]="currentIndex() === (slides().length || 3) - 1"
-            >
-            ❯
-          </button>
-        }
       </div>
-    </div>
-  </section>
-
-  <section id="program" class="program">
-    <div class="container">
-      <h2>{{ translationKeys.SCHEDULE.TITLE | transloco }}</h2>
-      <div class="program-cards">
-        <div class="card">
-          <h3>{{ translationKeys.SCHEDULE.FRIDAY.TITLE | transloco }}</h3>
-          <ul>
-            <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_1 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_2 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_3 | transloco }}</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>{{ translationKeys.SCHEDULE.SATURDAY.TITLE | transloco }}</h3>
-          <ul>
-            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_1 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_2 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_3 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_4 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_5 | transloco }}</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>{{ translationKeys.SCHEDULE.SUNDAY.TITLE | transloco }}</h3>
-          <ul>
-            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_1 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_2 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_3 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_4 | transloco }}</li>
-            <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_5 | transloco }}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="register">
-    <h2>{{ translationKeys.REGISTER.SUPPORT.TITLE | transloco }}</h2>
-    <p>
-      {{ translationKeys.REGISTER.SUPPORT.DESCRIPTION | transloco }}
-    </p>
-    <h2 id="register">{{ translationKeys.REGISTER.TITLE | transloco }}</h2>
-    <p>
-      {{ translationKeys.REGISTER.DESCRIPTION | transloco }}
-    </p>
-    <p>
-      <strong>{{ translationKeys.REGISTER.AMOUNT | transloco }}</strong>
-    </p>
-    <div class="form-container">
-      <h2>{{ translationKeys.REGISTER.FORM.TITLE | transloco }}</h2>
-      <button
-        id="open-form"
-        class="button"
-        [class.open-registration]="toggleRegistrationForm()"
-        (click)="toggleRegistration()"
+      @if (showCarouselButtons()) {
+        <button
+          (click)="moveToNextSlide()"
+          class="carousel-button next"
+          [disabled]="currentIndex() === (slides().length || 3) - 1"
         >
-        {{
+          ❯
+        </button>
+      }
+    </div>
+  </div>
+</section>
+
+<section id="program" class="program">
+  <div class="container">
+    <h2>{{ translationKeys.SCHEDULE.TITLE | transloco }}</h2>
+    <div class="program-cards">
+      <div class="card">
+        <h3>{{ translationKeys.SCHEDULE.FRIDAY.TITLE | transloco }}</h3>
+        <ul>
+          <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_1 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_2 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.FRIDAY.LINE_3 | transloco }}</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>{{ translationKeys.SCHEDULE.SATURDAY.TITLE | transloco }}</h3>
+        <ul>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_1 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_2 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_3 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_4 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_5 | transloco }}</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>{{ translationKeys.SCHEDULE.SUNDAY.TITLE | transloco }}</h3>
+        <ul>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_1 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_2 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_3 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_4 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_5 | transloco }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="register">
+  <h2>{{ translationKeys.REGISTER.SUPPORT.TITLE | transloco }}</h2>
+  <p>
+    {{ translationKeys.REGISTER.SUPPORT.DESCRIPTION | transloco }}
+  </p>
+  <h2 id="register">{{ translationKeys.REGISTER.TITLE | transloco }}</h2>
+  <p>
+    {{ translationKeys.REGISTER.DESCRIPTION | transloco }}
+  </p>
+  <p>
+    <strong>{{ translationKeys.REGISTER.AMOUNT | transloco }}</strong>
+  </p>
+  <div class="form-container">
+    <h2>{{ translationKeys.REGISTER.FORM.TITLE | transloco }}</h2>
+    <button
+      id="open-form"
+      class="button"
+      [class.open-registration]="toggleRegistrationForm()"
+      (click)="toggleRegistration()"
+    >
+      {{
         toggleRegistrationForm()
-        ? (translationKeys.REGISTER.FORM.BUTTON_CLOSE | transloco)
-        : (translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco)
-        }}
-      </button>
-      @if (isRegistrationFormInitialized()) {
-        @switch (currentLanguage()) { @case ('ro') {
+          ? (translationKeys.REGISTER.FORM.BUTTON_CLOSE | transloco)
+          : (translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco)
+      }}
+    </button>
+    @if (isRegistrationFormInitialized()) {
+      @switch (currentLanguage()) {
+        @case ("ro") {
           <iframe
             [hidden]="!toggleRegistrationForm()"
             #registration_form
             src="https://form.jotform.com/250458895936475"
             title="Registration Form"
-            >
+          >
           </iframe>
-          } @case ('en') {
+        }
+        @case ("en") {
           <iframe
             [hidden]="!toggleRegistrationForm()"
             #registration_form
             src="https://form.jotform.com/250503450416446"
             title="Registration Form"
-            >
+          >
           </iframe>
-          } @case ('fr') {
+        }
+        @case ("fr") {
           <iframe
             [hidden]="!toggleRegistrationForm()"
             #registration_form
             src="https://form.jotform.com/250503750252447"
             title="Registration Form"
-            >
+          >
           </iframe>
-          } }
         }
+      }
+    }
 
-        <p class="invitation">
-          {{ translationKeys.REGISTER.FORM.INVITATION | transloco }}
-        </p>
-      </div>
-    </section>
+    <p class="invitation">
+      {{ translationKeys.REGISTER.FORM.INVITATION | transloco }}
+    </p>
+  </div>
+</section>
 
-    <section id="location" class="map">
-      <div class="container">
-        <strong class="title">{{ translationKeys.LOCATION.INFO | transloco }}</strong>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.8804385498006!2d26.094575000000003!3d44.4356147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff37b13c1e7d%3A0xe50c81b8ff22932b!2z4oCdVW5pdmVyc3Ul4oCdIFBhbGFjZQ!5e0!3m2!1sen!2sro!4v1746188204593!5m2!1sen!2sro"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
+<section id="location" class="map">
+  <div class="container">
+    <strong class="title">{{
+      translationKeys.LOCATION.INFO | transloco
+    }}</strong>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63259.834688989846!2d25.338281222626083!3d45.51579275404216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b337ca890b808d%3A0xb504cb101b7c0675!2s507136%20Pe%C8%99tera!5e0!3m2!1sen!2sro!4v1777119466292!5m2!1sen!2sro"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
+<!-- Footer -->
+<!-- <footer>
       <div class="footer-conaitner">
         <div class="social-links">
           <a href="https://anandaashramurban.webnode.ro/" target="_blank">
@@ -347,4 +393,4 @@
         </ul>
         <p class="copyright">{{ translationKeys.FOOTER.COPYRIGHT | transloco }}</p>
       </div>
-    </footer>
+    </footer> -->

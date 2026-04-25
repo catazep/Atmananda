@@ -9,6 +9,12 @@ export type TranslationKeysOf<T extends TranslationStructure> = {
   [P in keyof T]: T[P] extends TranslationStructure ? TranslationKeysOf<T[P]> : string;
 };
 
+// Normalizes all leaf values to `string` so path-strings and translated strings
+// become the same type, enabling structural key comparison between JSON and CORE_TRANSLATION_KEYS.
+export type TranslationValues<T> = {
+  [K in keyof T]: T[K] extends object ? TranslationValues<T[K]> : string;
+};
+
 export const defineTranslationKeys = <T extends TranslationStructure>(
   translationStructure: (t: TranslationKeyPlaceholder) => T,
 ): TranslationKeysOf<T> => {

@@ -30,8 +30,8 @@
                 "output": "/assets"
               },
               {
-                "glob": "favicon.ico",
-                "input": "public",
+                "glob": "favicon.png",
+                "input": "src/assets",
                 "output": "/"
               },
               {

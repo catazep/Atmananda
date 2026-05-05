@@ -351,18 +351,65 @@
   </div>
 </section>
 
-<section id="location" class="map">
-  <div class="container">
-    <strong class="title">{{
-      translationKeys.LOCATION.INFO | transloco
-    }}</strong>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63259.834688989846!2d25.338281222626083!3d45.51579275404216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b337ca890b808d%3A0xb504cb101b7c0675!2s507136%20Pe%C8%99tera!5e0!3m2!1sen!2sro!4v1777119466292!5m2!1sen!2sro"
-      allowfullscreen
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+<section id="location" class="location-section">
+
+  <div class="video-wrapper">
+    <video #hotel_video class="location-hero-video"
+      src="assets/img/Zodia_Craiului/hotel_movie.mp4"
+      muted playsinline preload="auto">
+    </video>
+    @if (!videoPlaying()) {
+      <button class="video-play-btn" (click)="playVideo()" aria-label="Play video">
+        <mat-icon>play_circle</mat-icon>
+      </button>
+    }
   </div>
+
+  <div class="location-zigzag">
+    <div class="container">
+
+      <div class="zigzag-row">
+        <div class="zigzag-image">
+          <img
+            src="assets/img/Zodia_Craiului/hotel_2.jpeg"
+            loading="lazy"
+            alt="Vila Zodia Craiului"
+          >
+        </div>
+        <div class="zigzag-text">
+          <p [innerHTML]="translationKeys.LOCATION.ACCOMMODATION | transloco"></p>
+        </div>
+      </div>
+
+      <div class="zigzag-row reverse">
+        <div class="zigzag-image">
+          <img
+            src="assets/img/Zodia_Craiului/kitchen_1.jpeg"
+            loading="lazy"
+            alt="Masă în comun"
+          >
+        </div>
+        <div class="zigzag-text">
+          <p [innerHTML]="translationKeys.LOCATION.FOOD | transloco"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="location-map">
+    <div class="container">
+      <strong class="title">{{ translationKeys.LOCATION.INFO | transloco }}</strong>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63259.834688989846!2d25.338281222626083!3d45.51579275404216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b337ca890b808d%3A0xb504cb101b7c0675!2s507136%20Pe%C8%99tera!5e0!3m2!1sen!2sro!4v1777119466292!5m2!1sen!2sro"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <p class="location-extra-info">{{ translationKeys.LOCATION.EXTRA_INFO | transloco }}</p>
+    </div>
+  </div>
+
 </section>
 
 <!-- Footer -->

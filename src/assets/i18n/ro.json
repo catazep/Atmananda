@@ -77,7 +77,10 @@
     }
   },
   "LOCATION": {
-    "INFO": "Brașov - Pestera, 12-14 Iunie 2026"
+    "INFO": "Brașov - Pestera, 12-14 Iunie 2026",
+    "ACCOMMODATION": "În ceea ce privește <strong>cazarea</strong>, puteți opta pentru:<br> <strong>Cazare în vila principală</strong>: Locurile sunt limitate și se ocupă în ordinea înscrierilor. Această variantă oferă avantajul de a fi chiar în inima locației unde se desfășoară programul.<br> <strong>Cazare în împrejurimi</strong>: Există multiple opțiuni disponibile la doar câteva minute de mers pe jos. Această variantă este ideală pentru cei care preferă un alt tip de spațiu, având libertatea de a alege unitatea care li se potrivește cel mai bine.",
+    "FOOD": "Indiferent de opțiunea aleasă, <strong>toți participanții vor lua mesele și vor petrece timpul dedicat practicii în vila principală</strong>, formând astfel o comunitate unită pe durata întregului retreat.",
+    "EXTRA_INFO": "Dacă ai nevoie de informații suplimentare sau detalii despre înscriere, te rugăm să ne contactezi, suntem aici să te ajutăm!"
   },
   "FOOTER": {
     "ORGANIZER_1": "Organizat de Centrul de Terapii, Meditație și Yoga",

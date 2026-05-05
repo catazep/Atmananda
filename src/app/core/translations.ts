@@ -83,6 +83,9 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
   },
   LOCATION: {
     INFO: t,
+    ACCOMMODATION: t,
+    FOOD: t,
+    EXTRA_INFO: t,
   },
   FOOTER: {
     ORGANIZER_1: t,

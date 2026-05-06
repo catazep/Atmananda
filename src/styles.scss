@@ -424,15 +424,13 @@ h6 {
     cursor: pointer;
     color: white;
 
-    mat-icon {
+    i {
       font-size: 80px;
-      width: 80px;
-      height: 80px;
       opacity: 0.85;
       transition: opacity 0.2s;
     }
 
-    &:hover mat-icon {
+    &:hover i {
       opacity: 1;
     }
   }

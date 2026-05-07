@@ -52,10 +52,7 @@
               "node_modules/@fortawesome/fontawesome-free/css/all.css",
               "src/styles.scss"
             ],
-            "scripts": [],
-            "define": {
-              "BUILD_HASH": "\"9f95732\""
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {

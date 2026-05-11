@@ -102,7 +102,9 @@ export class AppComponent {
   }
 
   playVideo(): void {
-    this.hotelVideo()?.nativeElement.play().catch(() => {});
+    this.hotelVideo()
+      ?.nativeElement.play()
+      .catch(() => {});
   }
 
   changeLanguage(lang: string | LangDefinition): void {
@@ -126,17 +128,27 @@ export class AppComponent {
     }
   }
 
-  toggleRegistration(): void {
-    this.isRegistrationFormInitialized.set(true);
-    this.toggleRegistrationForm.update((v) => !v);
-    if (this.toggleRegistrationForm()) {
-      setTimeout(() => {
-        this.registrationFormRef()?.nativeElement?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-        });
-      }, 100);
+  openRegistration(): void {
+    // this.isRegistrationFormInitialized.set(true);
+    // this.toggleRegistrationForm.update((v) => !v);
+    // if (this.toggleRegistrationForm()) {
+    //   setTimeout(() => {
+    //     this.registrationFormRef()?.nativeElement?.scrollIntoView({
+    //       behavior: 'smooth',
+    //       block: 'center',
+    //     });
+    //   }, 100);
+    // }
+    let url = '';
+    switch (this.currentLanguage()) {
+      case 'en':
+        url = 'https://amis-ajatananda.org/romania-retreat-june-2026/';
+        break;
+      case 'ro':
+        url = 'https://amis-ajatananda.org/romania-retreat-june-2026-ro/';
+        break;
     }
+    window.open(url, '_blank');
   }
 
   private updateSlidePosition(): void {

@@ -51,7 +51,7 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
       P1: t,
       P2: t,
       P3: t,
-    }
+    },
   },
   QUOTE: {
     TEXT: t,
@@ -83,6 +83,7 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
   },
   LOCATION: {
     INFO: t,
+    DESCRIPTION: t,
     ACCOMMODATION: t,
     FOOD: t,
     EXTRA_INFO: t,
@@ -102,12 +103,18 @@ type _FlatKeys<T, Prefix extends string = ''> = {
     : `${Prefix}${K}`;
 }[keyof T & string];
 
-type _Assert<TJson> =
-  [Exclude<_FlatKeys<_KeysOf>, _FlatKeys<TJson>>] extends [never]
-    ? [Exclude<_FlatKeys<TJson>, _FlatKeys<_KeysOf>>] extends [never]
-      ? true
-      : { 'Extra keys in JSON not in translations.ts': Exclude<_FlatKeys<TJson>, _FlatKeys<_KeysOf>> }
-    : { 'Keys missing from JSON': Exclude<_FlatKeys<_KeysOf>, _FlatKeys<TJson>> };
+type _Assert<TJson> = [Exclude<_FlatKeys<_KeysOf>, _FlatKeys<TJson>>] extends [
+  never,
+]
+  ? [Exclude<_FlatKeys<TJson>, _FlatKeys<_KeysOf>>] extends [never]
+    ? true
+    : {
+        'Extra keys in JSON not in translations.ts': Exclude<
+          _FlatKeys<TJson>,
+          _FlatKeys<_KeysOf>
+        >;
+      }
+  : { 'Keys missing from JSON': Exclude<_FlatKeys<_KeysOf>, _FlatKeys<TJson>> };
 
 // Compile error here (hover for details) means JSON file and translations.ts are out of sync
 export const _en: true = true as _Assert<typeof EnJson>;

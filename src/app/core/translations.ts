@@ -15,7 +15,6 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
   TITLE: {
     LINE_1: t,
     LINE_2: t,
-    LINE_3: t,
     LINE_4: t,
     TIME: t,
     REGISTER_NOW: t,
@@ -35,6 +34,11 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
       LINE_3: t,
       LINE_4: t,
       LINE_5: t,
+      LINE_6: t,
+      LINE_7: t,
+      LINE_8: t,
+      LINE_9: t,
+      LINE_10: t,
     },
     SUNDAY: {
       TITLE: t,
@@ -43,6 +47,11 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
       LINE_3: t,
       LINE_4: t,
       LINE_5: t,
+      LINE_6: t,
+      LINE_7: t,
+      LINE_8: t,
+      LINE_9: t,
+      LINE_10: t,
     },
   },
   PRESENTATION: {
@@ -63,6 +72,7 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
       P1: t,
       P2: t,
       P3: t,
+      P4: t,
     },
   },
   REGISTER: {
@@ -74,6 +84,13 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
       BUTTON_OPEN: t,
       BUTTON_CLOSE: t,
       INVITATION: t,
+    },
+    ABOUT_ORGANIZER: {
+      TITLE: t,
+      P1: t,
+      P2: t,
+      P3: t,
+      P4: t,
     },
     SUPPORT: {
       TITLE: t,

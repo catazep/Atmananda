@@ -8,10 +8,9 @@
     "LOCATION": "Lieu"
   },
   "TITLE": {
-    "LINE_1": "Réalisation du Soi",
+    "LINE_1": "Retraite de Silence",
     "LINE_2": "Le Chemin de la Non-Dualité",
-    "LINE_3": "avec",
-    "LINE_4": "SWAMI ATMANANDA",
+    "LINE_4": "avec Swami Atmananda",
     "TIME": "Brașov - Pestera, 12-14 JUIN 2026",
     "REGISTER_NOW": "Inscrivez-vous maintenant"
   },
@@ -25,19 +24,29 @@
     },
     "SATURDAY": {
       "TITLE": "Samedi 13 Juin",
-      "LINE_1": "10:00 Accueil",
-      "LINE_2": "10:30 Satsang",
-      "LINE_3": "12:30 Pause déjeuner",
-      "LINE_4": "15:00 Satsang",
-      "LINE_5": "17:00 Fin du Satsang"
+      "LINE_1": "9:30 Accueil",
+      "LINE_2": "10:00 Méditation",
+      "LINE_3": "10:30 Pause thé",
+      "LINE_4": "11:00 Satsang",
+      "LINE_5": "12:30 Pause déjeuner",
+      "LINE_6": "15:30 Satsang",
+      "LINE_7": "17:00 Fin du Satsang",
+      "LINE_8": "17:30 Méditation",
+      "LINE_9": "18:00 Marche Consciente",
+      "LINE_10": "19:30 Dîner"
     },
     "SUNDAY": {
       "TITLE": "Dimanche 14 Juin",
-      "LINE_1": "10:00 Accueil",
-      "LINE_2": "10:30 Satsang",
-      "LINE_3": "12:30 Pause déjeuner",
-      "LINE_4": "15:00 Satsang",
-      "LINE_5": "17:00 Fin du Satsang"
+      "LINE_1": "9:30 Accueil",
+      "LINE_2": "10:00 Méditation",
+      "LINE_3": "10:30 Pause thé",
+      "LINE_4": "11:00 Satsang",
+      "LINE_5": "12:30 Pause déjeuner",
+      "LINE_6": "15:30 Satsang",
+      "LINE_7": "17:00 Fin du Satsang",
+      "LINE_8": "17:30 Méditation",
+      "LINE_9": "18:00 Marche Consciente",
+      "LINE_10": "19:30 Dîner"
     }
   },
   "PRESENTATION": {
@@ -57,7 +66,8 @@
     "CONTENT": {
       "P1": "Swami Atmananda Udasin est le moine principal sous la guidance duquel la communauté de l'ashram Ajatananda Ashram à Rishikesh, en Inde, fonctionne – un ashram monastique interreligieux dédié à l'Unité de la Vérité, conçu pour soutenir les chercheurs spirituels de toutes les traditions religieuses.",
       "P2": "Swami Atmananda fait partie de la tradition Advaita Vedanta et enseigne la Voie Directe de la Non-Dualité, offrant régulièrement des satsangs et des retraites en Inde et à l'étranger.",
-      "P3": "Avant d'embrasser la vie monastique, Swami Atmananda a travaillé comme maître de conférences à l'université. Plus tard, il a passé une décennie en solitude, d'abord dans un ermitage près de Jérusalem, puis dans le nord de l'Inde, se consacrant à une pratique spirituelle profonde. Vers la fin de cette période de retraite, il a adopté le Sanatana Dharma et, en 2001, a reçu l'initiation au sannyasa (renonciation monastique) de son bien-aimé Maître spirituel, H.H. Sri Chandra Swami Udasin. Ses enseignements continuent d'inspirer des chercheurs du monde entier, les guidant vers la réalisation de soi et la paix intérieure."
+      "P3": "Avant d'embrasser la vie monastique, Swami Atmananda a travaillé comme maître de conférences à l'université. Plus tard, il a passé une décennie en solitude, d'abord dans un ermitage près de Jérusalem, puis dans le nord de l'Inde, se consacrant à une pratique spirituelle profonde. Vers la fin de cette période de retraite, il a adopté le Sanatana Dharma et, en 2001, a reçu l'initiation au sannyasa (renonciation monastique) de son bien-aimé Maître spirituel, H.H. Sri Chandra Swami Udasin. Ses enseignements continuent d'inspirer des chercheurs du monde entier, les guidant vers la réalisation de soi et la paix intérieure.",
+      "P4": "Depuis 2012, ses enseignements ont inspiré des chercheurs spirituels du monde entier, les guidant vers un éveil profond et la paix intérieure."
     }
   },
   "REGISTER": {
@@ -70,6 +80,13 @@
       "BUTTON_CLOSE": "Fermer le formulaire d'inscription",
       "INVITATION": "Rejoignez-nous pour une rencontre spéciale avec Swami Atmananda"
     },
+    "ABOUT_ORGANIZER": {
+      "TITLE": "À propos des Organisateurs",
+      "P1": "La retraite est organisée par l'association française Les Amis d'Ajatananda Ashram.",
+      "P2": "Fondée en France en décembre 2015, l'Association soutient les activités de la communauté interreligieuse de l'Ajatananda Ashram à Rishikesh, en Inde, ainsi que les retraites et satsangs en Europe conduits par Swami Atmananda Udasin.",
+      "P3": "Au service de l'Ashram, l'Association aide à partager les enseignements de l'Advaita (Non-Dualité) transmis par Swami Atmananda avec les chercheurs spirituels.",
+      "P4": "Si vous souhaitez soutenir l'Association dans sa mission, vous pouvez devenir membre <a href='https://amis-ajatananda.org/membership/' target='_blank'>ici</a>."
+    },
     "SUPPORT": {
       "TITLE": "Enseignements",
       "DESCRIPTION": "Tous les programmes organisés par l'Ashram en Inde et en Europe sont offerts gratuitement. Ajatananda Ashram est une organisation à but non lucratif et dépend entièrement des dons pour couvrir les dépenses quotidiennes. Si vous vous sentez inspiré pour soutenir l'Ashram et contribuer à la promotion de ses activités dans le domaine des enseignements non-duels et du dialogue interreligieux, vous êtes les bienvenus pour le faire via la Boîte à Dons pendant la retraite ou en ligne.",
@@ -78,10 +95,10 @@
   },
   "LOCATION": {
     "INFO": "Brașov - Pestera, 12-14 Juin 2026",
-    "DESCRIPTION": "Cet événement a un caractère résidentiel étendu, conçu pour maintenir la continuité de l'expérience tout au long du retreat. Même si les options de couchage varient, toutes les activités centrales, les sessions de Satsang et les repas pris en silence se dérouleront ensemble dans la villa principale.",
-    "ACCOMMODATION": "En ce qui concerne <strong>l'hébergement</strong>, vous pouvez opter pour :<br> <strong>Hébergement dans la villa principale</strong> : Les places sont limitées et attribuées dans l'ordre des inscriptions. Cette option offre l'avantage d'être au cœur du lieu où se déroule le programme.<br> <strong>Hébergement aux alentours</strong> : Il existe de multiples options disponibles à quelques minutes à pied, idéales pour ceux qui préfèrent un autre type d'espace avec la liberté de choisir l'établissement qui leur convient.",
-    "FOOD": "Quelle que soit l'option choisie, <strong>tous les participants prendront leurs repas et passeront le temps dédié à la pratique dans la villa principale</strong>, formant ainsi une communauté unie pendant toute la durée du retreat.",
-    "EXTRA_INFO": "Si vous avez besoin d'informations supplémentaires ou de détails sur l'inscription, n'hésitez pas à nous contacter — nous sommes là pour vous aider !"
+    "DESCRIPTION": "Cet événement a un caractère résidentiel étendu, conçu pour maintenir la continuité de l'expérience tout au long du retreat. Même si les arrangements d'hébergement peuvent varier, toutes les activités centrales, les sessions de Satsang et les repas pris en silence se dérouleront ensemble dans la villa principale.",
+    "ACCOMMODATION": "En ce qui concerne <strong>l'hébergement</strong>, les participants séjournent généralement dans la <strong>zone environnante</strong>, où de nombreuses options sont disponibles à quelques minutes à pied. Cette formule est idéale car elle vous laisse la liberté de choisir le type d'espace qui vous convient, tout en restant proche du cœur du programme. <br> Pour séjourner directement dans la <strong>villa principale</strong>, ces places sont généralement réservées dès le début du processus d'inscription. Toutefois, si vous préférez cette option, veuillez nous contacter pour vérifier s'il reste des disponibilités.",
+    "FOOD": "Quel que soit votre lieu de séjour, <strong>tous les participants partageront les repas et passeront leur temps de pratique dans la villa principale</strong>, formant une communauté unie pendant toute la durée du retreat. Le programme est spécialement conçu pour que le fil de l'expérience reste continu pour chacun.",
+    "EXTRA_INFO": "Si vous avez besoin d'informations supplémentaires sur les options à proximité ou sur les modalités d'inscription, n'hésitez pas à nous contacter — nous sommes là pour vous aider !"
   },
   "FOOTER": {
     "ORGANIZER_1": "Organisé par le Centre de Thérapies, Méditation et Yoga",

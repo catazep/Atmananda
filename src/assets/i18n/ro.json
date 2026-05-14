@@ -8,10 +8,9 @@
     "LOCATION": "Locație"
   },
   "TITLE": {
-    "LINE_1": "Învățături Advaita",
+    "LINE_1": "Retreat de Tăcere",
     "LINE_2": "Calea Non-Duală a Revelării Sinelui",
-    "LINE_3": "cu",
-    "LINE_4": "Swami Atmananda",
+    "LINE_4": "cu Swami Atmananda",
     "TIME": "Brașov - Pestera, 12-14 Iunie 2026",
     "REGISTER_NOW": "Înregistrați-vă aici"
   },
@@ -25,19 +24,29 @@
     },
     "SATURDAY": {
       "TITLE": "Sâmbătă 13 Iunie",
-      "LINE_1": "10:00 Primire",
-      "LINE_2": "10:30 Satsang",
-      "LINE_3": "12:30 Pauză de prânz",
-      "LINE_4": "15:00 Satsang",
-      "LINE_5": "17:00 Sfârșitul Satsangului"
+      "LINE_1": "9:30 Primire",
+      "LINE_2": "10:00 Meditație",
+      "LINE_3": "10:30 Pauză de ceai",
+      "LINE_4": "11:00 Satsang",
+      "LINE_5": "12:30 Pauză de prânz",
+      "LINE_6": "15:30 Satsang",
+      "LINE_7": "17:00 Sfârșitul Satsangului",
+      "LINE_8": "17:30 Meditație",
+      "LINE_9": "18:00 Plimbare Conștientă",
+      "LINE_10": "19:30 Cină"
     },
     "SUNDAY": {
       "TITLE": "Duminică 14 Iunie",
-      "LINE_1": "10:00 Primire",
-      "LINE_2": "10:30 Satsang",
-      "LINE_3": "12:30 Pauză de prânz",
-      "LINE_4": "15:00 Satsang",
-      "LINE_5": "17:00 Sfârșitul Satsangului"
+      "LINE_1": "9:30 Primire",
+      "LINE_2": "10:00 Meditație",
+      "LINE_3": "10:30 Pauză de ceai",
+      "LINE_4": "11:00 Satsang",
+      "LINE_5": "12:30 Pauză de prânz",
+      "LINE_6": "15:30 Satsang",
+      "LINE_7": "17:00 Sfârșitul Satsangului",
+      "LINE_8": "17:30 Meditație",
+      "LINE_9": "18:00 Plimbare Conștientă",
+      "LINE_10": "19:30 Cină"
     }
   },
   "PRESENTATION": {
@@ -57,7 +66,8 @@
     "CONTENT": {
       "P1": "Swami Atmananda Udasin este călugărul principal sub ghidarea caruia activeaza comunitatea ashram-ului Ajatananda Ashram din Rishikesh, India – un ashram monahal interreligios dedicat Unității Adevărului, care este menit să sprijine căutătorii spirituali din toate tradițiile religioase.",
       "P2": "Swami Atmananda face parte din tradiția Advaita Vedanta și predă Calea Directă a Non-Dualității, oferind regulat satsanguri și retreaturi atât în India, cât și în afara granițelor acesteia.",
-      "P3": "Înainte de a îmbrățișa viața monahală, Swami Atmananda a activat ca lector universitar. Ulterior, a petrecut un deceniu în solitudine, mai întâi într-un hermitagiu din apropierea Ierusalimului și apoi în nordul Indiei, dedicându-se unei practici spirituale profunde. Spre sfârșitul acestei perioade de retragere, a adoptat Sanatana Dharma și, în 2001, a primit inițierea în sannyasa (renunțarea monahală) din partea iubitului său Maestru spiritual, H.H. Sri Chandra Swami Udasin. Învățăturile sale continuă să inspire căutători din întreaga lume, ghidându-i pe aceștia către auto-realizare și pace interioară"
+      "P3": "Înainte de a îmbrățișa viața monahală, Swami Atmananda a activat ca lector universitar. Ulterior, a petrecut un deceniu în solitudine, mai întâi într-un hermitagiu din apropierea Ierusalimului și apoi în nordul Indiei, dedicându-se unei practici spirituale profunde. Spre sfârșitul acestei perioade de retragere, a adoptat Sanatana Dharma și, în 2001, a primit inițierea în sannyasa (renunțarea monahală) din partea iubitului său Maestru spiritual, H.H. Sri Chandra Swami Udasin. Învățăturile sale continuă să inspire căutători din întreaga lume, ghidându-i pe aceștia către auto-realizare și pace interioară",
+      "P4": "Începând cu 2012, învățăturile sale au inspirat căutători spirituali din întreaga lume, ghidându-i pe aceștia către o trezire profundă și pace interioară."
     }
   },
   "REGISTER": {
@@ -70,6 +80,13 @@
       "BUTTON_CLOSE": "Înnchide formularul",
       "INVITATION": "Alătură-te pentru întâlnirea specială cu Swami Atmananda"
     },
+    "ABOUT_ORGANIZER": {
+      "TITLE": "Despre Organizatori",
+      "P1": "Retreatul este organizat de asociația franceză Les Amis d'Ajatananda Ashram.",
+      "P2": "Fondată în Franța în decembrie 2015, Asociația sprijină activitățile comunității interreligioase a Ajatananda Ashram din Rishikesh, India, precum și retreaturi și satsanguri în Europa conduse de Swami Atmananda Udasin.",
+      "P3": "În slujba Ashramului, Asociația contribuie la răspândirea învățăturilor Advaita (Non-Dualitate) transmise de Swami Atmananda către căutătorii spirituali.",
+      "P4": "Dacă dorești să sprijini Asociația în misiunea ei, poți deveni membru <a href='https://amis-ajatananda.org/membership/' target='_blank'>aici</a>."
+    },
     "SUPPORT": {
       "TITLE": "Învățătură",
       "DESCRIPTION": "Toate programele organizate de Ashramul din India și Europa sunt oferite gratuit. Ajatananda Ashram este o organizație non-profit și depinde în totalitate de donații pentru a acoperi cheltuielile zilnice. Dacă simți inspirația de a sprijini Ashramul și de a contribui la promovarea activităților sale în domeniul învățăturilor non-duale și al dialogului interreligios, ești binevenit să o faci prin Cutia de Donații din timpul retragerii sau online.",
@@ -78,10 +95,10 @@
   },
   "LOCATION": {
     "INFO": "Brașov - Pestera, 12-14 Iunie 2026",
-    "DESCRIPTION": "Acest eveniment are un caracter rezidențial extins, conceput pentru a menține continuitatea experienței pe tot parcursul retreatului. Chiar dacă opțiunile de dormit variază, toate activitățile centrale, sesiunile de Satsang și mesele luate în tăcere, se vor desfășura împreună, în cadrul vilei principale.",
-    "ACCOMMODATION": "În ceea ce privește <strong>cazarea</strong>, puteți opta pentru:<br> <strong>Cazare în vila principală</strong>: Locurile sunt limitate și se ocupă în ordinea înscrierilor. Această variantă oferă avantajul de a fi chiar în inima locației unde se desfășoară programul.<br> <strong>Cazare în împrejurimi</strong>: Există multiple opțiuni disponibile la doar câteva minute de mers pe jos. Această variantă este ideală pentru cei care preferă un alt tip de spațiu, având libertatea de a alege unitatea care li se potrivește cel mai bine.",
-    "FOOD": "Indiferent de opțiunea aleasă, <strong>toți participanții vor lua mesele și vor petrece timpul dedicat practicii în vila principală</strong>, formând astfel o comunitate unită pe durata întregului retreat.",
-    "EXTRA_INFO": "Dacă ai nevoie de informații suplimentare sau detalii despre înscriere, te rugăm să ne contactezi, suntem aici să te ajutăm!"
+    "DESCRIPTION": "Acest eveniment are un caracter rezidențial extins, conceput pentru a menține continuitatea experienței pe tot parcursul retreatului. Chiar dacă aranjamentele de cazare pot varia, toate activitățile centrale, sesiunile de Satsang și mesele luate în tăcere se vor desfășura împreună, în cadrul vilei principale.",
+    "ACCOMMODATION": "În ceea ce privește <strong>cazarea</strong>, participanții locuiesc de obicei în <strong>zona învecinată</strong>, unde există multiple opțiuni disponibile la câteva minute de mers pe jos. Această variantă este ideală, deoarece îți oferă libertatea de a alege tipul de spațiu care ți se potrivește cel mai bine, rămânând totodată în apropierea programului. <br> În ceea ce privește cazarea direct în <strong>vila principală</strong>, aceste locuri sunt de obicei ocupate chiar de la începutul procesului de înregistrare. Totuși, dacă preferi această variantă, te rugăm să ne contactezi pentru a verifica dacă mai există disponibilitate.",
+    "FOOD": "Indiferent de cazarea aleasă, <strong>toți participanții vor împărți mesele și vor petrece timpul de practică în vila principală</strong>, formând o comunitate unită pe durata întregului retreat. Programul este conceput special pentru ca fluxul experienței să rămână continuu pentru toată lumea.",
+    "EXTRA_INFO": "Dacă ai nevoie de informații suplimentare despre opțiunile din apropiere sau detalii despre înscriere, nu ezita să ne contactezi, suntem aici să te ajutăm!"
   },
   "FOOTER": {
     "ORGANIZER_1": "Organizat de Centrul de Terapii, Meditație și Yoga",

@@ -60,16 +60,11 @@
         <span class="large-font">{{
           translationKeys.TITLE.LINE_1 | transloco
         }}</span>
-        <span class="small-font">{{
-          translationKeys.TITLE.LINE_2 | transloco
-        }}</span>
-      </span>
-      <span class="main-page-container">
-        <span class="small-font">{{
-          translationKeys.TITLE.LINE_3 | transloco
-        }}</span>
         <span class="large-font special">{{
           translationKeys.TITLE.LINE_4 | transloco
+        }}</span>
+        <span class="small-font">{{
+          translationKeys.TITLE.LINE_2 | transloco
         }}</span>
       </span>
       <p class="small-font">{{ translationKeys.TITLE.TIME | transloco }}</p>
@@ -89,9 +84,9 @@
     <p>
       {{ translationKeys.PRESENTATION.CONTENT.P2 | transloco }}
     </p>
-    <p>
+    <!-- <p>
       {{ translationKeys.PRESENTATION.CONTENT.P3 | transloco }}
-    </p>
+    </p> -->
   </div>
 </section>
 
@@ -133,6 +128,9 @@
         <p>
           {{ translationKeys.ABOUT.CONTENT.P3 | transloco }}
         </p>
+        <p>
+          {{ translationKeys.ABOUT.CONTENT.P4 | transloco }}
+        </p>
       </div>
       @if (windowWidth() < 1024) {
         <div class="swami-website">
@@ -173,9 +171,10 @@
         <div class="carousel-track" #carousel_track>
           <div class="carousel-slide">
             <div class="video-card">
+              <!-- https://www.youtube.com/watch?v=6rdZeSALCtw -->
               <iframe
-                src="https://www.youtube.com/embed/MH7beFld-mM?si=DlO0W6F03Qd5tOEp"
-                title="Grace Is What You Are"
+                src="https://www.youtube.com/embed/6rdZeSALCtw?si=35fKkixao0OPU_db"
+                title="Truth Cannot Be Known by the Mind!"
                 frameborder="0"
                 allow="
                   accelerometer;
@@ -190,14 +189,14 @@
                 allowfullscreen
               >
               </iframe>
-              <h3>Grace Is What You Are</h3>
+              <h3>Truth Cannot Be Known by the Mind!</h3>
             </div>
           </div>
           <div class="carousel-slide">
             <div class="video-card">
               <iframe
-                src="https://www.youtube.com/embed/TMFkLb-I0LM?si=_43i1XTKE89LxrRM"
-                title="Only Silence Can Hear Silence!"
+                src="https://www.youtube.com/embed/KJ0r9vWtZvQ?si=UvbxvgwFgDlwdsX6"
+                title="Your True Self Is the Ultimate Reality!"
                 frameborder="0"
                 allow="
                   accelerometer;
@@ -212,14 +211,14 @@
                 allowfullscreen
               >
               </iframe>
-              <h3>Only Silence Can Hear Silence!</h3>
+              <h3>Your True Self Is the Ultimate Reality!</h3>
             </div>
           </div>
           <div class="carousel-slide">
             <div class="video-card">
               <iframe
-                src="https://www.youtube.com/embed/xK-KK6iC6nk?si=-F4KOchTJXFLRR0R"
-                title="YouTube video player"
+                src="https://www.youtube.com/embed/k3x4-9dSxdY?si=n32N_G-x0kgDasaz"
+                title="Three Sure Ways to Awakening!"
                 frameborder="0"
                 allow="
                   accelerometer;
@@ -233,7 +232,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <h3>Can the Wave Surrender to the Ocean?</h3>
+              <h3>Three Sure Ways to Awakening!</h3>
             </div>
           </div>
         </div>
@@ -271,6 +270,11 @@
           <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_3 | transloco }}</li>
           <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_4 | transloco }}</li>
           <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_5 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_6 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_7 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_8 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_9 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SATURDAY.LINE_10 | transloco }}</li>
         </ul>
       </div>
       <div class="card">
@@ -281,6 +285,11 @@
           <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_3 | transloco }}</li>
           <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_4 | transloco }}</li>
           <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_5 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_6 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_7 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_8 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_9 | transloco }}</li>
+          <li>{{ translationKeys.SCHEDULE.SUNDAY.LINE_10 | transloco }}</li>
         </ul>
       </div>
     </div>
@@ -289,9 +298,7 @@
 
 <section class="register">
   <h2>{{ translationKeys.REGISTER.SUPPORT.TITLE | transloco }}</h2>
-  <p>
-    {{ translationKeys.REGISTER.SUPPORT.DESCRIPTION | transloco }}
-  </p>
+  <p [innerHTML]="translationKeys.REGISTER.SUPPORT.DESCRIPTION | transloco"></p>
   <h2 id="register">{{ translationKeys.REGISTER.TITLE | transloco }}</h2>
   <p>
     {{ translationKeys.REGISTER.DESCRIPTION | transloco }}
@@ -299,6 +306,11 @@
   <p>
     <strong>{{ translationKeys.REGISTER.AMOUNT | transloco }}</strong>
   </p>
+  <h2>{{ translationKeys.REGISTER.ABOUT_ORGANIZER.TITLE | transloco }}</h2>
+  <p>{{ translationKeys.REGISTER.ABOUT_ORGANIZER.P1 | transloco }}</p>
+  <p>{{ translationKeys.REGISTER.ABOUT_ORGANIZER.P2 | transloco }}</p>
+  <p>{{ translationKeys.REGISTER.ABOUT_ORGANIZER.P3 | transloco }}</p>
+  <p [innerHTML]="translationKeys.REGISTER.ABOUT_ORGANIZER.P4 | transloco"></p>
   <div class="form-container">
     <h2>{{ translationKeys.REGISTER.FORM.TITLE | transloco }}</h2>
     <button

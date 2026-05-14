@@ -8,10 +8,9 @@
     "LOCATION": "Location"
   },
   "TITLE": {
-    "LINE_1": "Talks on Advaita",
+    "LINE_1": "Silent Retreat",
     "LINE_2": "The Non-Dual Way to Awakening",
-    "LINE_3": "with",
-    "LINE_4": "Swami Atmananda",
+    "LINE_4": "with Swami Atmananda",
     "TIME": "Brașov - Pestera, 12-14 June 2026",
     "REGISTER_NOW": "Register here"
   },
@@ -25,26 +24,36 @@
     },
     "SATURDAY": {
       "TITLE": "Saturday, June 13",
-      "LINE_1": "10:00 Welcome",
-      "LINE_2": "10:30 Satsang",
-      "LINE_3": "12:30 Lunch Break",
-      "LINE_4": "15:00 Satsang",
-      "LINE_5": "17:00 End of Satsang"
+      "LINE_1": "9:30 Welcome",
+      "LINE_2": "10:00 Meditation",
+      "LINE_3": "10:30 Tea break",
+      "LINE_4": "11:00 Satsang",
+      "LINE_5": "12:30 Lunch Break",
+      "LINE_6": "15:30 Satsang",
+      "LINE_7": "17:00 End of Satsang",
+      "LINE_8": "17:30 Meditation",
+      "LINE_9": "18:00 Conscious Walk",
+      "LINE_10": "19:30 Dinner"
     },
     "SUNDAY": {
       "TITLE": "Sunday, June 14",
-      "LINE_1": "10:00 Welcome",
-      "LINE_2": "10:30 Satsang",
-      "LINE_3": "12:30 Lunch Break",
-      "LINE_4": "15:00 Satsang",
-      "LINE_5": "17:00 End of Satsang"
+      "LINE_1": "9:30 Welcome",
+      "LINE_2": "10:00 Meditation",
+      "LINE_3": "10:30 Tea break",
+      "LINE_4": "11:00 Satsang",
+      "LINE_5": "12:30 Lunch Break",
+      "LINE_6": "15:30 Satsang",
+      "LINE_7": "17:00 End of Satsang",
+      "LINE_8": "17:30 Meditation",
+      "LINE_9": "18:00 Conscious Walk",
+      "LINE_10": "19:30 Dinner"
     }
   },
   "PRESENTATION": {
     "TITLE": "Presentation",
     "CONTENT": {
-      "P1": "Swami Atmananda offers us the opportunity to deepen the theme of Spiritual Awakening and Self-Realization, based on the tradition of Advaita Vedanta.",
-      "P2": "Awakening is Pure Presence. It is neither an experience nor a state, but simply the spontaneous and immediate Recognition of our true Nature, the Self.",
+      "P1": "During this Silent Retreat, Swami Atmananda invites us to deepen our understanding of Consciousness, Spiritual Awakening, and Self-Realization through the tradition of Advaita Vedanta.",
+      "P2": "The silence observed throughout the retreat will create a particularly supportive atmosphere for a deep process of Awakening to unfold within the participants.",
       "P3": "There is no 'awakened person,' only the pure presence of the Self..."
     }
   },
@@ -56,14 +65,15 @@
     "TITLE": "About Swami Atmananda",
 
     "CONTENT": {
-      "P1": "Swami Atmananda Udasin is the Headmonk under whose guidance the Ajatananda Ashram community in Rishikesh, India operates – an interreligious monastic ashram dedicated to the Unity of Truth, designed to support spiritual seekers from all religious traditions.",
-      "P2": "Swami Atmananda is part of the Advaita Vedanta tradition and teaches the Direct Path of Non-Duality, regularly offering satsangs and retreats both in India and abroad.",
-      "P3": "Before embracing monastic life, Swami Atmananda worked as a university lecturer. Later, he spent a decade in solitude, first in a hermitage near Jerusalem and then in northern India, dedicating himself to deep spiritual practice. Towards the end of this period of retreat, he embraced Sanatana Dharma and, in 2001, received initiation into sannyasa (monastic renunciation) from his beloved spiritual Master, H.H. Sri Chandra Swami Udasin. His teachings continue to inspire seekers from around the world, guiding them towards Self-realization and inner peace."
+      "P1": "Swami Atmananda Udasin is the Head Monk under whose guidance the Ajatananda Ashram community in Rishikesh, India, operates. The Ashram is an interreligious monastic community dedicated to the Unity of Truth and devoted to welcoming and supporting spiritual seekers from all religious traditions.",
+      "P2": "Swami Atmananda teaches the Direct Path of Non-Duality in the tradition of Advaita Vedanta and offers regular satsangs and retreats both in India and abroad.",
+      "P3": "After a brief career as a university lecturer, Swami Atmananda felt called to monastic life and spent ten years in solitude, first in a hermitage near Jerusalem and later in northern India, dedicating himself to deep spiritual practice. Towards the end of this silent and solitary retreat, he embraced Sanatana Dharma and, in 2001, received initiation into sannyasa (Indian monastic renunciation) from his beloved Master, H.H. Sri Chandra Swami Udasin, whom he had met in Haridwar in 1990.",
+      "P4": "Since 2012, his teachings have inspired spiritual seekers from around the world, guiding them toward deep Awakening and inner peace."
     }
   },
   "REGISTER": {
     "TITLE": "Contribution for the Event",
-    "DESCRIPTION": "This event is offered free of charge, and your contribution is intended exclusively to support the organization and cover logistical costs. It is not a fee for participation or for the teachings received, but a way to support the event.",
+    "DESCRIPTION": "Your contribution is intended solely to support the organization of the retreat and help cover logistical expenses. It is not a fee for participation or for the teachings received, but rather a way to support the event and its organization.",
     "AMOUNT": "Contribution 60€",
     "FORM": {
       "TITLE": "Register for the Event",
@@ -71,18 +81,25 @@
       "BUTTON_CLOSE": "Close registration form",
       "INVITATION": "Join us for a special meeting with Swami Atmananda"
     },
+    "ABOUT_ORGANIZER": {
+      "TITLE": "About the Organizers",
+      "P1": "The retreat is organized by the French association Les Amis d’Ajatananda Ashram.",
+      "P2": "Founded in France in December 2015, the Association supports the activities of the interfaith community of Ajatananda Ashram in Rishikesh, India, as well as the retreats and satsangs in Europe led by Swami Atmananda Udasin.",
+      "P3": "In service of the Ashram, the Association helps share the teachings of Advaita (Non-Duality) transmitted by Swami Atmananda with spiritual seekers.",
+      "P4": "If you would like to support the Association in its mission, you may become a member <a href='https://amis-ajatananda.org/membership/' target='_blank'>here</a>."
+    },
     "SUPPORT": {
       "TITLE": "Teachings",
-      "DESCRIPTION": "All programs organized by the Ashram in India and Europe are offered free of charge. Ajatananda Ashram is a non-profit organization and depends entirely on donations to cover daily expenses. If you feel inspired to support the Ashram and contribute to the promotion of its activities in the field of non-dual teachings and interreligious dialogue, you are welcome to do so through the Donation Box during the retreat or online.",
+      "DESCRIPTION": "All programmes organized by the Ashram in India and Europe are offered free of charge. The Ajatananda Ashram is a non-profit organization and depends entirely on donations to cover daily expenses. If you feel inspired to support the Ashram and contribute to the promotion of its activities in the field of non-dual teachings and interreligious dialogue, you are welcome to do so through the Donation Box during the retreat or online at <a href='https://ajatananda.org' target='_blank'>ajatananda.org</a>.",
       "VISIT_ASHRAM": "Visit Ajatananda Ashram"
     }
   },
   "LOCATION": {
     "INFO": "Brașov - Pestera, 12-14 June 2026",
-    "DESCRIPTION": "This event has an extended residential character, designed to maintain the continuity of the experience throughout the retreat. Even though sleeping options vary, all the core activities, Satsang sessions and meals taken in silence will take place together at the main villa.",
-    "ACCOMMODATION": "Regarding <strong>accommodation</strong>, you can choose:<br> <strong>Stay in the main villa</strong>: Spots are limited and filled on a first-come, first-served basis. This option has the advantage of being at the heart of the venue where the programme takes place.<br> <strong>Stay in the surroundings</strong>: There are multiple options available just a few minutes' walk away. This is ideal for those who prefer a different type of space, with the freedom to choose the accommodation that suits them best.",
-    "FOOD": "Regardless of the option chosen, <strong>all participants will have their meals and spend the time dedicated to practice at the main villa</strong>, forming a united community throughout the entire retreat.",
-    "EXTRA_INFO": "If you need additional information or details about registration, please don't hesitate to contact us — we are here to help!"
+    "DESCRIPTION": "This event has an extended residential character, designed to maintain the continuity of the experience throughout the entire retreat. Even though sleeping arrangements may vary, all core activities, Satsang sessions and silent meals will take place together within the main villa.",
+    "ACCOMMODATION": "​Regarding <strong>accommodation</strong>, participants typically stay in the <strong>surrounding area</strong>, where there are multiple options available just a few minutes' walk away. This setup is ideal as it grants you the freedom to choose the type of space that suits you best, while staying close to the heart of the program. <br> ​As for staying directly in the <strong>main villa</strong>, these spaces are usually claimed at the very beginning of the registration process. However, if you would prefer this option, please contact us so we can check if any availability remains or if a spot has opened up.",
+    "FOOD": "Regardless of where you choose to stay, <strong>all participants will share meals and spend their practice time in the main villa</strong>, forming a united community throughout the retreat. The program is specifically designed so that the flow of the experience remains seamless for everyone.",
+    "EXTRA_INFO": "​If you need further information about nearby options or registration details, please reach out to us, we are here to help!"
   },
   "FOOTER": {
     "ORGANIZER_1": "Organized by the Center for Therapies, Meditation, and Yoga",

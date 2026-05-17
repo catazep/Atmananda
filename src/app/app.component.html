@@ -26,6 +26,9 @@
       <a href="#location" class="nav-link">{{
         translationKeys.MENU_ITEMS.LOCATION | transloco
       }}</a>
+      <a href="#travel" class="nav-link">{{
+        translationKeys.MENU_ITEMS.TRAVEL | transloco
+      }}</a>
     </div>
 
     <div class="flags-container">
@@ -441,6 +444,35 @@
           >)</strong
         >
       </p>
+    </div>
+  </div>
+</section>
+
+<section id="travel" class="travel-section">
+  <div class="container">
+    <h2 class="travel-title">{{ translationKeys.TRAVEL.TITLE | transloco }}</h2>
+    <p class="travel-intro">{{ translationKeys.TRAVEL.INTRO | transloco }}</p>
+    <div class="travel-options">
+      <div class="travel-card">
+        <h3>{{ translationKeys.TRAVEL.OPTION1.TITLE | transloco }}</h3>
+        <p>{{ translationKeys.TRAVEL.OPTION1.SUBTITLE | transloco }}</p>
+        <p><strong>{{ translationKeys.TRAVEL.OPTION1.ROUTE | transloco }}</strong></p>
+        <p>{{ translationKeys.TRAVEL.OPTION1.LAST_STEP | transloco }}</p>
+        <p [innerHTML]="translationKeys.TRAVEL.OPTION1.BOOKING | transloco"></p>
+      </div>
+      <div class="travel-card">
+        <h3>{{ translationKeys.TRAVEL.OPTION2.TITLE | transloco }}</h3>
+        <p>{{ translationKeys.TRAVEL.OPTION2.SUBTITLE | transloco }}</p>
+        <p><strong>{{ translationKeys.TRAVEL.OPTION2.ROUTE | transloco }}</strong></p>
+        <p>{{ translationKeys.TRAVEL.OPTION2.LAST_STEP | transloco }}</p>
+        <p [innerHTML]="translationKeys.TRAVEL.OPTION2.TICKETS | transloco"></p>
+      </div>
+    </div>
+    <div class="travel-notes">
+      <h3>{{ translationKeys.TRAVEL.NOTES.TITLE | transloco }}</h3>
+      <p [innerHTML]="translationKeys.TRAVEL.NOTES.LOCAL | transloco"></p>
+      <p [innerHTML]="translationKeys.TRAVEL.NOTES.BRAN_AREA | transloco"></p>
+      <p>{{ translationKeys.TRAVEL.NOTES.RETURN | transloco }}</p>
     </div>
   </div>
 </section>

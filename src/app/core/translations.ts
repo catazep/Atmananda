@@ -11,6 +11,7 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
     ABOUT: t,
     REGISTER: t,
     LOCATION: t,
+    TRAVEL: t,
   },
   TITLE: {
     LINE_1: t,
@@ -104,6 +105,30 @@ export const CORE_TRANSLATION_KEYS = defineTranslationKeys((t) => ({
     ACCOMMODATION: t,
     FOOD: t,
     EXTRA_INFO: t,
+  },
+  TRAVEL: {
+    TITLE: t,
+    INTRO: t,
+    OPTION1: {
+      TITLE: t,
+      SUBTITLE: t,
+      ROUTE: t,
+      LAST_STEP: t,
+      BOOKING: t,
+    },
+    OPTION2: {
+      TITLE: t,
+      SUBTITLE: t,
+      ROUTE: t,
+      LAST_STEP: t,
+      TICKETS: t,
+    },
+    NOTES: {
+      TITLE: t,
+      LOCAL: t,
+      BRAN_AREA: t,
+      RETURN: t,
+    },
   },
   FOOTER: {
     ORGANIZER_1: t,

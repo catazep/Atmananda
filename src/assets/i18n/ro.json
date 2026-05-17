@@ -5,7 +5,8 @@
     "PRESENTATION": "Prezentare",
     "ABOUT": "Despre",
     "REGISTER": "Înregistrare",
-    "LOCATION": "Locație"
+    "LOCATION": "Locație",
+    "TRAVEL": "Transport"
   },
   "TITLE": {
     "LINE_1": "Retreat de Tăcere",
@@ -99,6 +100,30 @@
     "ACCOMMODATION": "În ceea ce privește <strong>cazarea</strong>, participanții se pot caza în <strong>zona învecinată</strong>, unde există multiple opțiuni disponibile la câteva minute de mers pe jos. Această variantă este ideală, deoarece îți oferă libertatea de a alege tipul de spațiu care ți se potrivește cel mai bine, rămânând totodată în apropierea programului. <br> În ceea ce privește cazarea direct în <strong>vila principală</strong>, aceste locuri sunt de obicei ocupate chiar de la începutul procesului de înregistrare. Totuși, dacă preferi această variantă, te rugăm să ne contactezi pentru a verifica dacă mai există disponibilitate.",
     "FOOD": "Indiferent de cazarea aleasă, <strong>toți participanții vor împărți mesele și vor petrece timpul de practică în vila principală</strong>, formând o comunitate unită pe durata întregului retreat. Programul este conceput special pentru ca fluxul experienței să rămână continuu pentru toată lumea.",
     "EXTRA_INFO": "Dacă ai nevoie de informații suplimentare despre opțiunile din apropiere sau detalii despre înscriere, nu ezita să ne contactezi, suntem aici să te ajutăm!"
+  },
+  "TRAVEL": {
+    "TITLE": "Cum ajungi la Retreat (Sat Peștera)",
+    "INTRO": "Indiferent dacă vii din afara țării sau din București, am pregătit pentru tine cele mai simple modalități de a ajunge în locația noastră pitorească din satul Peștera.",
+    "OPTION1": {
+      "TITLE": "🚐 Varianta 1: Transfer Direct (Recomandat)",
+      "SUBTITLE": "Cea mai confortabilă opțiune pentru cei care aterizează pe Aeroportul Otopeni (București).",
+      "ROUTE": "Traseu: Aeroport Otopeni → Bran (Microbuz/Van 8 locuri)",
+      "LAST_STEP": "Ultima etapă: Din Bran, locația se află la aproximativ 15 minute de mers cu un taxi local.",
+      "BOOKING": "Rezervări: Poți rezerva și plăti locul în avans pe <a href='https://transfer-lowcost.ro/' target='_blank' rel='noopener noreferrer'>transfer-lowcost.ro</a>."
+    },
+    "OPTION2": {
+      "TITLE": "🚆 Varianta 2: Tren + Taxi",
+      "SUBTITLE": "O variantă scenică, ideală pentru a evita traficul de pe Valea Prahovei în orele de vârf.",
+      "ROUTE": "Traseu: Aeroport Otopeni → Gara de Nord București → Gara Brașov",
+      "LAST_STEP": "Ultima etapă: Din Gara Brașov, poți lua un taxi, Uber sau Bolt până în satul Peștera.",
+      "TICKETS": "Bilete tren: Verifică orarul pe <a href='https://mersultrenurilor.infofer.ro/ro-RO/Itineraries' target='_blank' rel='noopener noreferrer'>CFR Călători</a>. De regulă este suficient site-ul CFR, dar acesta poate îndruma către partenerii lor <a href='https://online.astratranscarpatic.ro/ro-RO/Itineraries' target='_blank' rel='noopener noreferrer'>Astra Transcarpatic</a>, <a href='https://interregional.ro/#/' target='_blank' rel='noopener noreferrer'>Regio Călători</a> sau <a href='https://www.softrans.ro/' target='_blank' rel='noopener noreferrer'>Softrans</a>, pe care îi puteți verifica direct."
+    },
+    "NOTES": {
+      "TITLE": "📌 Note Importante",
+      "LOCAL": "Transport local: În Brașov poți folosi cu încredere aplicațiile <strong>Uber sau Bolt</strong>.",
+      "BRAN_AREA": "În zona Bran/Peștera: Deși aplicațiile de ride-sharing apar ca fiind disponibile, numărul de mașini este limitat. Pentru siguranță și promptitudine, recomandăm să apelați la <strong>taxiurile locale</strong>.",
+      "RETURN": "Retur: Aceleași opțiuni sunt valabile și pentru drumul de întoarcere. Vă recomandăm să vă planificați transferul în avans."
+    }
   },
   "FOOTER": {
     "ORGANIZER_1": "Organizat de Centrul de Terapii, Meditație și Yoga",

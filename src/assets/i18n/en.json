@@ -5,7 +5,8 @@
     "PRESENTATION": "Presentation",
     "ABOUT": "About",
     "REGISTER": "Register",
-    "LOCATION": "Location"
+    "LOCATION": "Location",
+    "TRAVEL": "Transport"
   },
   "TITLE": {
     "LINE_1": "Silent Retreat",
@@ -99,6 +100,30 @@
     "ACCOMMODATION": "​Regarding <strong>accommodation</strong>, participants typically stay in the <strong>surrounding area</strong>, where there are multiple options available just a few minutes' walk away. This setup is ideal as it grants you the freedom to choose the type of space that suits you best, while staying close to the heart of the program. <br> ​As for staying directly in the <strong>main villa</strong>, these spaces are usually claimed at the very beginning of the registration process. However, if you would prefer this option, please contact us so we can check if any availability remains or if a spot has opened up.",
     "FOOD": "Regardless of where you choose to stay, <strong>all participants will share meals and spend their practice time in the main villa</strong>, forming a united community throughout the retreat. The program is specifically designed so that the flow of the experience remains seamless for everyone.",
     "EXTRA_INFO": "​If you need further information about nearby options or registration details, please reach out to us, we are here to help!"
+  },
+  "TRAVEL": {
+    "TITLE": "How to Get to the Retreat (Peștera Village)",
+    "INTRO": "Whether you are coming from abroad or from Bucharest, we have put together the simplest ways to reach our picturesque venue in the village of Peștera.",
+    "OPTION1": {
+      "TITLE": "🚐 Option 1: Direct Transfer (Recommended)",
+      "SUBTITLE": "The most comfortable option for those landing at Otopeni Airport (Bucharest).",
+      "ROUTE": "Route: Otopeni Airport → Bran (Minibus/Van, 8 seats)",
+      "LAST_STEP": "Final step: From Bran, the venue is approximately 15 minutes by local taxi.",
+      "BOOKING": "Booking: You can reserve and pay your seat in advance at <a href='https://transfer-lowcost.ro/' target='_blank' rel='noopener noreferrer'>transfer-lowcost.ro</a>."
+    },
+    "OPTION2": {
+      "TITLE": "🚆 Option 2: Train + Taxi",
+      "SUBTITLE": "A scenic option, ideal for avoiding Prahova Valley traffic during peak hours.",
+      "ROUTE": "Route: Otopeni Airport → Bucharest Nord Station → Brașov Station",
+      "LAST_STEP": "Final step: From Brașov Station, you can take a taxi, Uber, or Bolt to Peștera village.",
+      "TICKETS": "Train tickets: Check the schedule on <a href='https://mersultrenurilor.infofer.ro/en-GB/Itineraries' target='_blank' rel='noopener noreferrer'>CFR Călători</a>. The CFR website is usually sufficient, but it may also direct you to their partners <a href='https://online.astratranscarpatic.ro/en-GB/Itineraries' target='_blank' rel='noopener noreferrer'>Astra Transcarpatic</a>, <a href='https://interregional.ro/#/' target='_blank' rel='noopener noreferrer'>Regio Călători</a>, or <a href='https://www.softrans.ro/' target='_blank' rel='noopener noreferrer'>Softrans</a>, which you can also check directly."
+    },
+    "NOTES": {
+      "TITLE": "📌 Important Notes",
+      "LOCAL": "Local transport: In Brașov you can confidently use <strong>Uber or Bolt</strong>.",
+      "BRAN_AREA": "In the Bran/Peștera area: While ride-sharing apps appear to be available, the number of cars is limited. For safety and punctuality, we recommend using <strong>local taxis</strong>.",
+      "RETURN": "Return journey: The same options apply on the way back. We recommend planning your transfer in advance."
+    }
   },
   "FOOTER": {
     "ORGANIZER_1": "Organized by the Center for Therapies, Meditation, and Yoga",

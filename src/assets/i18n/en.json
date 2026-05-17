@@ -63,7 +63,6 @@
   },
   "ABOUT": {
     "TITLE": "About Swami Atmananda",
-
     "CONTENT": {
       "P1": "Swami Atmananda Udasin is the Head Monk under whose guidance the Ajatananda Ashram community in Rishikesh, India, operates. The Ashram is an interreligious monastic community dedicated to the Unity of Truth and devoted to welcoming and supporting spiritual seekers from all religious traditions.",
       "P2": "Swami Atmananda teaches the Direct Path of Non-Duality in the tradition of Advaita Vedanta and offers regular satsangs and retreats both in India and abroad.",
@@ -83,7 +82,7 @@
     },
     "ABOUT_ORGANIZER": {
       "TITLE": "About the Organizers",
-      "P1": "The retreat is organized by the French association Les Amis d’Ajatananda Ashram.",
+      "P1": "The retreat is organized by the French association <strong>Les Amis d’Ajatananda Ashram</strong> in close partnership with <strong>Dan and Lakshmi Barbuș</strong>.",
       "P2": "Founded in France in December 2015, the Association supports the activities of the interfaith community of Ajatananda Ashram in Rishikesh, India, as well as the retreats and satsangs in Europe led by Swami Atmananda Udasin.",
       "P3": "In service of the Ashram, the Association helps share the teachings of Advaita (Non-Duality) transmitted by Swami Atmananda with spiritual seekers.",
       "P4": "If you would like to support the Association in its mission, you may become a member <a href='https://amis-ajatananda.org/membership/' target='_blank'>here</a>."

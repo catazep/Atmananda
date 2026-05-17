@@ -29,6 +29,8 @@ const LOCAL_STORAGE_LANGUAGE_KEY = 'lang';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
+  private readonly navEl =
+    viewChild.required<ElementRef<HTMLElement>>('nav_el');
   private readonly track =
     viewChild.required<ElementRef<HTMLElement>>('carousel_track');
   private readonly registrationFormRef =
@@ -92,6 +94,18 @@ export class AppComponent {
         });
       }
     });
+  }
+
+  @HostListener('document:click', ['$event.target'])
+  onDocumentClick(target: EventTarget | null): void {
+    if (this.navToggle() && !this.navEl().nativeElement.contains(target as Node)) {
+      this.navToggle.set(false);
+    }
+  }
+
+  @HostListener('window:scroll')
+  onScroll(): void {
+    if (this.navToggle()) this.navToggle.set(false);
   }
 
   @HostListener('window:resize')

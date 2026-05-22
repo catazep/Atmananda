@@ -628,6 +628,11 @@ h6 {
     }
   }
 
+  .button{
+    display: block;
+    margin: 2rem auto 0;  
+  }
+
   @media (max-width: 768px) {
     .travel-options {
       grid-template-columns: 1fr;
@@ -637,6 +642,13 @@ h6 {
 
 button {
   cursor: pointer;
+}
+
+.register-cta {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: var(--secondary);
 }
 
 .social-links {

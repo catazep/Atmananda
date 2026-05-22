@@ -320,43 +320,9 @@
   <p [innerHTML]="translationKeys.REGISTER.ABOUT_ORGANIZER.P1 | transloco"></p>
   <div class="form-container">
     <h2>{{ translationKeys.REGISTER.FORM.TITLE | transloco }}</h2>
-    <button
-      id="open-form"
-      class="button"
-      [class.open-registration]="toggleRegistrationForm()"
-      (click)="openRegistration()"
-    >
-      {{
-        toggleRegistrationForm()
-          ? (translationKeys.REGISTER.FORM.BUTTON_CLOSE | transloco)
-          : (translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco)
-      }}
+    <button class="button" (click)="openRegistration()">
+      {{ translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco }}
     </button>
-    @if (isRegistrationFormInitialized()) {
-      @switch (currentLanguage()) {
-        @case ("ro") {
-          <iframe
-            [hidden]="!toggleRegistrationForm()"
-            #registration_form
-            src="https://form.jotform.com/250458895936475"
-            title="Registration Form"
-          >
-          </iframe>
-        }
-        @case ("en") {
-          <iframe
-            [hidden]="!toggleRegistrationForm()"
-            #registration_form
-            src="https://form.jotform.com/250503450416446"
-            title="Registration Form"
-          >
-          </iframe>
-        }
-        @case ("fr") {
-          <div>Missing implementation</div>
-        }
-      }
-    }
 
     <p class="invitation">
       {{ translationKeys.REGISTER.FORM.INVITATION | transloco }}
@@ -420,7 +386,6 @@
       </div>
     </div>
   </div>
-
 </section>
 
 <section id="travel" class="travel-section">
@@ -482,6 +447,10 @@
         </strong>
       </p>
     </div>
+
+    <button class="button" (click)="openRegistration()">
+      {{ translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco }}
+    </button>
   </div>
 </section>
 

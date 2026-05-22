@@ -47,8 +47,6 @@ export class AppComponent {
   readonly navToggle = signal(false);
   readonly windowWidth = signal(window.innerWidth);
   readonly showCarouselButtons = computed(() => this.windowWidth() < 1024);
-  readonly toggleRegistrationForm = signal(false);
-  readonly isRegistrationFormInitialized = signal(false);
   readonly videoPlaying = signal(false);
 
   private readonly translocoService = inject(TranslocoService);

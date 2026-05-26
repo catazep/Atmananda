@@ -423,6 +423,9 @@
       <p>{{ translationKeys.TRAVEL.NOTES.RETURN | transloco }}</p>
     </div>
     <div class="location-map">
+      <button class="button" (click)="openRegistration()">
+        {{ translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco }}
+      </button>
       <strong class="title">{{
         translationKeys.LOCATION.INFO | transloco
       }}</strong>
@@ -447,10 +450,6 @@
         </strong>
       </p>
     </div>
-
-    <button class="button" (click)="openRegistration()">
-      {{ translationKeys.REGISTER.FORM.BUTTON_OPEN | transloco }}
-    </button>
   </div>
 </section>
 
